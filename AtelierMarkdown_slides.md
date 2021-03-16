@@ -1,12 +1,13 @@
 ---
 title: "Atelier BU - Prendre des notes et rédiger en Markdown"
-theme: "solarized"
-transition: "slide"
+theme: "league"
+transition: "convex"
 highlightTheme: "monokai"
 logoImg: "img/LogoUPPAcouleurRVB.png"
 slideNumber: true
-center: true
+center: false
 previewLinks: true
+
 ---
 
 <!-- .slide: data-background="https://64.media.tumblr.com/ae9b5152f55e9d30f64d9e7433840363/tumblr_mwv6cczLEo1six59bo1_500.gif" -->
@@ -40,12 +41,12 @@ julien.rabaud@univ-pau.fr | [@ujubib](https://twitter.com/ujubib)
 
 ### Déroulé {style=color:coral}
 
-- *Généralités, histoire, définitions* {.fragment .fade-left}
-- [Markdown](), *syntaxes et saveurs* {.fragment .fade-left}
-- *Prise de note avec* [Obsidian](https://obsidian.md) {.fragment .fade-left}
-- *Rédaction avec* [Zettlr](https://www.zettlr.com) {.fragment .fade-left}
-- *Et* [Zotero]() *dans tout ça*... {.fragment .fade-left}
-- *La magie* [Pandoc]() {.fragment .fade-left}
+- Généralités, histoire, définitions {.fragment .fade-left}
+- *Markdown*, syntaxes et saveurs {.fragment .fade-left}
+- Principes et outils pour prendre des notes en *Markdown* {.fragment .fade-left}
+- Rédiger en *Markdown* {.fragment .fade-left}
+- Et *Zotero* dans tout ça... {.fragment .fade-left}
+- La magie *Pandoc* {.fragment .fade-left}
 
 ---
 
@@ -95,33 +96,63 @@ julien.rabaud@univ-pau.fr | [@ujubib](https://twitter.com/ujubib)
 
 <!-- .slide: data-background="https://64.media.tumblr.com/tumblr_lxf7w0U1Qg1qdezf9o1_500.gif" -->
 
-## Prise de note avec [Obsidian]() {style=color:coral}
+## Principes et outils pour prendre des notes en *Markdown* {style=color:coral}
 
 --
 
-[Obsidian.md](https://obsidian.md)
+### Principes
+
+Pas du markdown standard mais adoptés par tous ces outils (+ *Zettlr*)
+
+  - `#tags`
+  - `[[wikilinks]]`
+  - *Templates* (daily, note de lecture...)
+
+--
+
+### Outils
+
+- [Obsidian.md](https://obsidian.md)
+- [Athens](https://github.com/athensresearch/athens/)
+- Extensions pour *VS Code*
+  - Markdown Memo
+  - Markdown Link Updater
+  - Markdown Links (Vue en graphe)
 
 ---
 
 <!-- .slide: data-background="https://64.media.tumblr.com/tumblr_m09wp6W0Af1qgfmnco1_500.gif" -->
 
-## Rédaction avec [Zettlr]() {style=color:coral}
-
-<img height=250 src="img/logo_zettlr.png" style="border-style:none;"/>
+## Rédiger en *Markdown* {style=color:coral}
 
 --
 
-#### Ressources officielles
+##### éditeurs spécialisés
 
-- [Chaîne YouTube](https://youtube.com/c/Zettlr) {.fragment}
+- Zettlr
+  - [Chaîne YouTube](https://youtube.com/c/Zettlr)
+  - [documentation en français](https://docs.zettlr.com/fr/)
 
-- [documentation en français](https://docs.zettlr.com/fr/) {.fragment}
+- Typora
 
 --
 
-#### Interface
+##### éditeurs généralistes
 
-<iframe height=450px width=100% src="https://www.zettlr.com"></iframe>
+- Rstudio (avec Rmarkdown)
+
+--
+
+- **VS Code** avec quelques extensions : 
+  - Markdown Extension Pack :
+    - Markdown All in One
+    - Markdown PDF
+    - Mardown Image
+    - markdownlint
+    - Markdown Preview Github Style (désinstallée)
+    - Grammarly (unofficial)
+  - Markdown Footnote
+  - (Markdown Fiction Writer)
 
 ---
 
@@ -135,10 +166,10 @@ julien.rabaud@univ-pau.fr | [@ujubib](https://twitter.com/ujubib)
 
 - [Better BibteX for Zotero](https://retorque.re/zotero-better-bibtex/) : **Indispensable** {style=font-size:0.6em;} {.fragment}
   
-   exporte vos références et garde le fichier synchronisé {style=font-size:0.6em;}
+   exporte vos références dans un fichier (`.json` ou `.bib`) et garde le fichier synchronisé {style=font-size:0.6em;}
   - [Documentation pour Markdown/Pandoc](https://retorque.re/zotero-better-bibtex/exporting/pandoc/) {style=font-size:0.6em;}
 
-- ([Mdnotes for Zotero](https://github.com/argenos/zotero-mdnotes) :) *bientôt dépréciée) {style=font-size:0.6em;} {.fragment}
+- [Mdnotes for Zotero](https://github.com/argenos/zotero-mdnotes) : *bientôt dépréciée ?* {style=font-size:0.6em;} {.fragment}
   
   exporte en markdown (*vers un dossier obsidian ou zettlr*) {style=font-size:0.6em;}
   - les métadonnées de la référence {style=font-size:0.6em;}
@@ -152,7 +183,7 @@ julien.rabaud@univ-pau.fr | [@ujubib](https://twitter.com/ujubib)
 
 #### Extensions pour éditeurs
 
-- VS Code, Atom, Brackets : gestionnaire de plugin
+- VS Code : gestionnaire de plugin
 - Obsidian
   - sur le forum d'Obsidian : [Zotero best practices](https://forum.obsidian.md/t/zotero-best-practices/164)
 - Zettlr : voir la section dédiée dans la doc
