@@ -1,7 +1,6 @@
 pandoc --standalone -t revealjs -V theme=sky -o idNumEn.html IdNum2020en.md
 pandoc --standalone -t pptx -o idNumEn.pptx --reference-doc=UPPA.pptx IdNum2020en.md
 
-
 -V theme=moon
 
 | Name      | Effect                                                |
@@ -17,8 +16,6 @@ pandoc --standalone -t pptx -o idNumEn.pptx --reference-doc=UPPA.pptx IdNum2020e
 | solarized | Cream-colored background, dark green text, blue links |
 | blood     | Dark background, thick white text, red links          |
 | moon      | Dark blue background, thick grey text, blue links     |
-
-
 
 ```
 pandoc -f markdown -t revealjs -s --slide-level=3 -V revealjs-url=data/reveal.js-4.1.0/js/reveal.js -V theme=solarized -o presMars.html IdNum2020fr.md

@@ -1,11 +1,11 @@
 ---
 title: "Atelier BU - Prendre des notes et rédiger en Markdown"
-theme: "league"
-transition: "convex"
+theme: "moon"
+tansition: "convex"
 highlightTheme: "monokai"
 logoImg: "img/LogoUPPAcouleurRVB.png"
 slideNumber: true
-center: false
+center: true
 previewLinks: true
 
 ---

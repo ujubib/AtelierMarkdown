@@ -16,7 +16,7 @@
   <link rel="stylesheet" href="libs/reveal.js/font-awesome-4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="libs/reveal.js/3.8.0/css/reveal.css">
   
-  <link rel="stylesheet" href="libs/reveal.js/3.8.0/css/theme/solarized.css" id="theme">
+  <link rel="stylesheet" href="libs/reveal.js/3.8.0/css/theme/moon.css" id="theme">
   
   
   <link rel="stylesheet" href="libs/reveal.js/3.8.0/plugin/title-footer/title-footer-mod.css" />
@@ -277,10 +277,29 @@
 
 
     
+        <section >
+            
+            <hr>
+<p>title: “Atelier BU - Prendre des notes et rédiger en Markdown”
+theme: “moon”
+transition: “convex”
+background-transition: &quot;
+highlightTheme: “monokai”
+logoImg: “img/LogoUPPAcouleurRVB.png”
+slideNumber: true
+center: true
+previewLinks: true</p>
+
+            </section>
+    
+
+
+
+    
     <section>
         <section data-background="https://64.media.tumblr.com/ae9b5152f55e9d30f64d9e7433840363/tumblr_mwv6cczLEo1six59bo1_500.gif">
             <!-- .slide: data-background="https://64.media.tumblr.com/ae9b5152f55e9d30f64d9e7433840363/tumblr_mwv6cczLEo1six59bo1_500.gif" -->
-<h4 style="color:black;background-color:coral;opacity:0.7;border-radius:9px;padding:3px;font-family:monospace,perpetua,mistral,gadugi,rockwell,papyrus;font-size:.8em;width:75%;text-align:center;margin-left:auto;margin-right:auto;"><a id="user-content-prendre-des-notes-et-rédiger-en-markdown" class="anchor" href="#prendre-des-notes-et-rédiger-en-markdown" aria-hidden="true"></a>Prendre des notes et rédiger en <a href="">Markdown</a></h4>
+<h4 style="color:black;background-color:coral;opacity:0.7;border-radius:9px;padding:3px;font-family:monospace,perpetua,mistral,gadugi,rockwell,papyrus;font-size:.8em;width:75%;text-align:center;margin-left:auto;margin-right:auto;"><a id="user-content-prendre-des-notes-et-rédiger-en-markdown" class="anchor" href="#prendre-des-notes-et-rédiger-en-markdown" aria-hidden="true"></a>Prendre des notes et rédiger en <a href="https://wikipedia.fr">Markdown</a></h4>
 <p style="color:coral;font-size:.6em;font-family:monospace;opacity:0.7;">Obsidian – Zettlr – ♥ Pandoc ♥ – (<em>et Zotero</em>)</p>
 <img height=240px src="img/markdownOrange.png" style="border-style:none;opacity:1;" />
 <p style="font-size:0.5em;color:deeppink;background-color:lightpink;opacity:.6;border-radius:15px;padding:3px;;width:42%;text-align:center;margin-left:auto;margin-right:auto;border-style:solid;border-color:lightpink;border-width:2px;">UPPA – <em>Service Commun de la Documentation</em><br>
@@ -288,18 +307,33 @@
 <p style="font-size:0.5em;color:coral;background-color:;border-radius:15px;padding:3px;;width:42%;text-align:center;margin-left:auto;margin-right:auto;border-style:solid;border-color:coral;border-width:2px;opacity:.7;">Julien Rabaud (<em>Service d’appui à la recherche</em>)<br>
 <a href="mailto:julien.rabaud@univ-pau.fr">julien.rabaud@univ-pau.fr</a> | <a href="https://twitter.com/ujubib">@ujubib</a><br>
 – Mars 2021 –</p>
+<aside class="notes">
+<ul>
+<li>Bonjour</li>
+<li>Je me présente</li>
+<li>Tour de table :
+<ul>
+<li>Pourquoi êtes-vous là ?</li>
+<li>Avec quoi prenez-vous des notes ?</li>
+<li>Avec quoi Rédigez-vous ?</li>
+<li>Utilisez-vous Zotero ?</li>
+<li>Quel est votre éditeur de texte favori ?</li>
+</ul>
+</li>
+</ul>
+</aside>
 
             </section>
         
             <section >
                 <h3 style="color:coral"><a id="user-content-déroulé" class="anchor" href="#déroulé" aria-hidden="true"></a>Déroulé</h3>
 <ul>
-<li class="fragment fade-left"><em>Généralités, histoire, définitions</em></li>
-<li class="fragment fade-left"><a href="">Markdown</a>, <em>syntaxes et saveurs</em></li>
-<li class="fragment fade-left"><em>Prise de note avec</em> <a href="https://obsidian.md">Obsidian</a></li>
-<li class="fragment fade-left"><em>Rédaction avec</em> <a href="https://www.zettlr.com">Zettlr</a></li>
-<li class="fragment fade-left"><em>Et</em> <a href="">Zotero</a> <em>dans tout ça</em>…</li>
-<li class="fragment fade-left"><em>La magie</em> <a href="">Pandoc</a></li>
+<li class="fragment fade-left">Généralités, histoire, définitions</li>
+<li class="fragment fade-left"><em>Markdown</em>, syntaxes et saveurs</li>
+<li class="fragment fade-left">Principes et outils pour prendre des notes en <em>Markdown</em></li>
+<li class="fragment fade-left">Rédiger en <em>Markdown</em></li>
+<li class="fragment fade-left">Et <em>Zotero</em> dans tout ça…</li>
+<li class="fragment fade-left">La magie <em>Pandoc</em></li>
 </ul>
 
             </section>
@@ -391,12 +425,34 @@
     <section>
         <section data-background="https://64.media.tumblr.com/tumblr_lxf7w0U1Qg1qdezf9o1_500.gif">
             <!-- .slide: data-background="https://64.media.tumblr.com/tumblr_lxf7w0U1Qg1qdezf9o1_500.gif" -->
-<h2 style="color:coral"><a id="user-content-prise-de-note-avec-obsidian" class="anchor" href="#prise-de-note-avec-obsidian" aria-hidden="true"></a>Prise de note avec <a href="">Obsidian</a></h2>
+<h2 style="color:coral"><a id="user-content-principes-et-outils-pour-prendre-des-notes-en-markdown" class="anchor" href="#principes-et-outils-pour-prendre-des-notes-en-markdown" aria-hidden="true"></a>Principes et outils pour prendre des notes en <em>Markdown</em></h2>
 
             </section>
         
             <section >
-                <p><a href="https://obsidian.md">Obsidian.md</a></p>
+                <h3><a id="user-content-principes" class="anchor" href="#principes" aria-hidden="true"></a>Principes</h3>
+<p>Pas du markdown standard mais adoptés par tous ces outils (+ <em>Zettlr</em>)</p>
+<ul>
+<li><code>#tags</code></li>
+<li><code>[[wikilinks]]</code></li>
+<li><em>Templates</em> (daily, note de lecture…)</li>
+</ul>
+
+            </section>
+        
+            <section >
+                <h3><a id="user-content-outils" class="anchor" href="#outils" aria-hidden="true"></a>Outils</h3>
+<ul>
+<li><a href="https://obsidian.md">Obsidian.md</a></li>
+<li><a href="https://github.com/athensresearch/athens/">Athens</a></li>
+<li>Extensions pour <em>VS Code</em>
+<ul>
+<li>Markdown Memo</li>
+<li>Markdown Link Updater</li>
+<li>Markdown Links (Vue en graphe)</li>
+</ul>
+</li>
+</ul>
 
             </section>
         
@@ -410,27 +466,54 @@
     <section>
         <section data-background="https://64.media.tumblr.com/tumblr_m09wp6W0Af1qgfmnco1_500.gif">
             <!-- .slide: data-background="https://64.media.tumblr.com/tumblr_m09wp6W0Af1qgfmnco1_500.gif" -->
-<h2 style="color:coral"><a id="user-content-rédaction-avec-zettlr" class="anchor" href="#rédaction-avec-zettlr" aria-hidden="true"></a>Rédaction avec <a href="">Zettlr</a></h2>
-<img height=250 src="img/logo_zettlr.png" style="border-style:none;"/>
+<h2 style="color:coral"><a id="user-content-rédiger-en-markdown" class="anchor" href="#rédiger-en-markdown" aria-hidden="true"></a>Rédiger en <em>Markdown</em></h2>
 
             </section>
         
             <section >
-                <h4><a id="user-content-ressources-officielles" class="anchor" href="#ressources-officielles" aria-hidden="true"></a>Ressources officielles</h4>
+                <h5><a id="user-content-éditeurs-spécialisés" class="anchor" href="#éditeurs-spécialisés" aria-hidden="true"></a>éditeurs spécialisés</h5>
 <ul>
-<li class="fragment">
-<p><a href="https://youtube.com/c/Zettlr">Chaîne YouTube</a></p>
+<li>
+<p>Zettlr</p>
+<ul>
+<li><a href="https://youtube.com/c/Zettlr">Chaîne YouTube</a></li>
+<li><a href="https://docs.zettlr.com/fr/">documentation en français</a></li>
+</ul>
 </li>
-<li class="fragment">
-<p><a href="https://docs.zettlr.com/fr/">documentation en français</a></p>
+<li>
+<p>Typora</p>
 </li>
 </ul>
 
             </section>
         
             <section >
-                <h4><a id="user-content-interface" class="anchor" href="#interface" aria-hidden="true"></a>Interface</h4>
-<iframe height=450px width=100% src="https://www.zettlr.com"></iframe>
+                <h5><a id="user-content-éditeurs-généralistes" class="anchor" href="#éditeurs-généralistes" aria-hidden="true"></a>éditeurs généralistes</h5>
+<ul>
+<li>Rstudio (avec Rmarkdown)</li>
+</ul>
+
+            </section>
+        
+            <section >
+                <ul>
+<li><strong>VS Code</strong> avec quelques extensions :
+<ul>
+<li>Markdown Extension Pack :
+<ul>
+<li>Markdown All in One</li>
+<li>Markdown PDF</li>
+<li>Mardown Image</li>
+<li>markdownlint</li>
+<li>Markdown Preview Github Style (désinstallée)</li>
+<li>Grammarly (unofficial)</li>
+</ul>
+</li>
+<li>Markdown Footnote</li>
+<li>(Markdown Fiction Writer)</li>
+</ul>
+</li>
+</ul>
 
             </section>
         
@@ -453,13 +536,13 @@
 <ul>
 <li class="fragment">
 <p style="font-size:0.6em;"><a href="https://retorque.re/zotero-better-bibtex/">Better BibteX for Zotero</a> : <strong>Indispensable</strong></p>
-<p style="font-size:0.6em;">exporte vos références et garde le fichier synchronisé</p>
+<p style="font-size:0.6em;">exporte vos références dans un fichier (<code>.json</code> ou <code>.bib</code>) et garde le fichier synchronisé</p>
 <ul>
 <li style="font-size:0.6em;"><a href="https://retorque.re/zotero-better-bibtex/exporting/pandoc/">Documentation pour Markdown/Pandoc</a></li>
 </ul>
 </li>
 <li class="fragment">
-<p style="font-size:0.6em;">(<a href="https://github.com/argenos/zotero-mdnotes">Mdnotes for Zotero</a> :) *bientôt dépréciée)</p>
+<p style="font-size:0.6em;"><a href="https://github.com/argenos/zotero-mdnotes">Mdnotes for Zotero</a> : <em>bientôt dépréciée ?</em></p>
 <p style="font-size:0.6em;">exporte en markdown (<em>vers un dossier obsidian ou zettlr</em>)</p>
 <ul>
 <li style="font-size:0.6em;">les métadonnées de la référence</li>
@@ -475,7 +558,7 @@
             <section >
                 <h4><a id="user-content-extensions-pour-éditeurs" class="anchor" href="#extensions-pour-éditeurs" aria-hidden="true"></a>Extensions pour éditeurs</h4>
 <ul>
-<li>VS Code, Atom, Brackets : gestionnaire de plugin</li>
+<li>VS Code : gestionnaire de plugin</li>
 <li>Obsidian
 <ul>
 <li>sur le forum d’Obsidian : <a href="https://forum.obsidian.md/t/zotero-best-practices/164">Zotero best practices</a></li>
