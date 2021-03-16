@@ -11,7 +11,7 @@ previewLinks: true
 
 <!-- .slide: data-background="https://64.media.tumblr.com/ae9b5152f55e9d30f64d9e7433840363/tumblr_mwv6cczLEo1six59bo1_500.gif" -->
 
-#### Prendre des notes et rédiger en [Markdown]() {style=color:black;background-color:coral;opacity:0.7;border-radius:9px;padding:3px;font-family:monospace,perpetua,mistral,gadugi,rockwell,papyrus;font-size:.8em;width:75%;text-align:center;margin-left:auto;margin-right:auto;}
+#### Prendre des notes et rédiger en [Markdown](https://wikipedia.fr) {style=color:black;background-color:coral;opacity:0.7;border-radius:9px;padding:3px;font-family:monospace,perpetua,mistral,gadugi,rockwell,papyrus;font-size:.8em;width:75%;text-align:center;margin-left:auto;margin-right:auto;}
 
 Obsidian -- Zettlr -- ♥ Pandoc ♥ -- (*et Zotero*) {style=color:coral;font-size:.6em;font-family:monospace;opacity:0.7;}
 
@@ -23,6 +23,18 @@ UPPA -- *Service Commun de la Documentation*
 Julien Rabaud (*Service d'appui à la recherche*)  
 julien.rabaud@univ-pau.fr | [@ujubib](https://twitter.com/ujubib)  
 \-- Mars 2021 -- {style=font-size:0.5em;color:coral;background-color:;border-radius:15px;padding:3px;;width:42%;text-align:center;margin-left:auto;margin-right:auto;border-style:solid;border-color:coral;border-width:2px;opacity:.7;}
+
+<aside class="notes">
+
+- Bonjour
+- Je me présente
+- Tour de table : 
+  - Pourquoi êtes-vous là ?
+  - Avec quoi prenez-vous des notes ?
+  - Avec quoi Rédigez-vous ?
+  - Utilisez-vous Zotero ?
+  - Quel est votre éditeur de texte favori ?
+</aside>
 
 --
 
