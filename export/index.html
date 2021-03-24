@@ -277,25 +277,6 @@
 
 
     
-        <section >
-            
-            <hr>
-<p>title: “Atelier BU - Prendre des notes et rédiger en Markdown”
-theme: “moon”
-transition: “convex”
-background-transition: &quot;
-highlightTheme: “monokai”
-logoImg: “img/LogoUPPAcouleurRVB.png”
-slideNumber: true
-center: true
-previewLinks: true</p>
-
-            </section>
-    
-
-
-
-    
     <section>
         <section data-background="https://64.media.tumblr.com/ae9b5152f55e9d30f64d9e7433840363/tumblr_mwv6cczLEo1six59bo1_500.gif">
             <!-- .slide: data-background="https://64.media.tumblr.com/ae9b5152f55e9d30f64d9e7433840363/tumblr_mwv6cczLEo1six59bo1_500.gif" -->
@@ -354,9 +335,6 @@ previewLinks: true</p>
         
             <section >
                 <h4><a id="user-content-généralités" class="anchor" href="#généralités" aria-hidden="true"></a>Généralités</h4>
-<ul>
-<li>ma veille zotero</li>
-</ul>
 
             </section>
         
@@ -471,17 +449,52 @@ previewLinks: true</p>
             </section>
         
             <section >
-                <h5><a id="user-content-éditeurs-spécialisés" class="anchor" href="#éditeurs-spécialisés" aria-hidden="true"></a>éditeurs spécialisés</h5>
+                <h3><a id="user-content-éditeurs-spécialisés-recommandés" class="anchor" href="#éditeurs-spécialisés-recommandés" aria-hidden="true"></a>éditeurs spécialisés Recommandés</h3>
 <ul>
 <li>
-<p>Zettlr</p>
+<p><a href="https://www.zettlr.com/">Zettlr</a></p>
 <ul>
 <li><a href="https://youtube.com/c/Zettlr">Chaîne YouTube</a></li>
 <li><a href="https://docs.zettlr.com/fr/">documentation en français</a></li>
 </ul>
 </li>
 <li>
-<p>Typora</p>
+<p><a href="https://typora.io">Typora</a></p>
+</li>
+</ul>
+
+            </section>
+        
+            <section >
+                <h3><a id="user-content-liste-déditeurs-markdown-de-bureau" class="anchor" href="#liste-déditeurs-markdown-de-bureau" aria-hidden="true"></a>Liste d’éditeurs <em>Markdown</em> de Bureau</h3>
+<ul>
+<li><a href="https://panwriter.com/">PanWriter</a></li>
+<li><a href="https://github.com/brrd/abricotine">Abricotine</a></li>
+<li><a href="https://somas.pages.gitlab.gnome.org/apostrophe/">Apostrophe</a></li>
+<li><a href="https://joplinapp.org/">Joplin</a></li>
+<li><a href="https://github.com/DaveJarvis/keenwrite">KeenWrite</a></li>
+<li><a href="https://github.com/RickStrahl/MarkdownMonster">Markdown Monster</a>
+<ul>
+<li>(orienté blogging)</li>
+</ul>
+</li>
+</ul>
+
+            </section>
+        
+            <section >
+                <h4><a id="user-content-liste-déditeurs-markdown-en-ligne" class="anchor" href="#liste-déditeurs-markdown-en-ligne" aria-hidden="true"></a>Liste d’éditeurs <em>Markdown</em> En ligne</h4>
+<ul>
+<li><a href="https://stylo.huma-num.fr/">_Stylo_</a>
+<ul>
+<li style="font-size:0.6em">(Pour l’écriture d’articles scientifiques, hébergé chez Huma-Num)</li>
+</ul>
+</li>
+<li><a href="https://dillinger.io/">Dillinger</a></li>
+<li><a href="https://hackmd.io/pricing">HackMD</a>
+<ul>
+<li style="font-size:0.6em">(Collaboratif)</li>
+</ul>
 </li>
 </ul>
 
@@ -621,9 +634,13 @@ pandoc -r html https://fr.wikipedia.org/wiki/Aaron_Swartz -o AaronSwartz.md
   mémoire.md
 </code></pre>
 </li>
-<li style="font-size:0.6em;">
-<p>markdown vers html, avec bibliographie et sommaire (cliquables), template, css et javascript (ex: <a href="https://inventaire-blot.netlify.app/final2.html#ref-blotArcheologieMontagneBasque1993">Inventaire Blot</a>)</p>
-<pre><code>pandoc 
+</ul>
+
+            </section>
+        
+            <section >
+                <ul>
+<li style="font-size:0.6em;">markdown vers html, avec bibliographie et sommaire (cliquables), template, css et javascript (ex: <a href="https://inventaire-blot.netlify.app/final2.html#ref-blotArcheologieMontagneBasque1993">Inventaire Blot</a>)<pre><code>pandoc 
   -s 
   --toc 
   --template=data/templateHtml.html 
@@ -665,7 +682,11 @@ pandoc -r html https://fr.wikipedia.org/wiki/Aaron_Swartz -o AaronSwartz.md
             </section>
         
             <section >
-                <h2><a id="user-content-contact" class="anchor" href="#contact" aria-hidden="true"></a>Contact</h2>
+                <h2><a id="user-content-liens" class="anchor" href="#liens" aria-hidden="true"></a>liens</h2>
+<ul>
+<li>ma veille Zotero : <a href="https://www.zotero.org/ujubib/collections/KH8SQ49L">Prendre des notes, écrire</a></li>
+<li></li>
+</ul>
 
             </section>
         
@@ -714,7 +735,7 @@ pandoc -r html https://fr.wikipedia.org/wiki/Aaron_Swartz -o AaronSwartz.md
         mouseWheel: false,
         hideAddressBar: true,
         previewLinks: true,
-        transition: 'slide',
+        transition: 'default',
         transitionSpeed: 'default',
         backgroundTransition: 'default',
         viewDistance: 3,

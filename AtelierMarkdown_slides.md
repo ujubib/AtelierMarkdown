@@ -1,12 +1,14 @@
 ---
 title: "Atelier BU - Prendre des notes et rédiger en Markdown"
-theme: "moon"
+theme: "solarized"
 tansition: "convex"
 highlightTheme: "monokai"
 logoImg: "img/LogoUPPAcouleurRVB.png"
 slideNumber: true
 center: true
+pdfSeparateFragments: false
 previewLinks: true
+preloadIframes: true
 
 ---
 
@@ -41,12 +43,12 @@ julien.rabaud@univ-pau.fr | [@ujubib](https://twitter.com/ujubib)
 
 ### Déroulé {style=color:coral}
 
-- Généralités, histoire, définitions {.fragment .fade-left}
-- *Markdown*, syntaxes et saveurs {.fragment .fade-left}
-- Principes et outils pour prendre des notes en *Markdown* {.fragment .fade-left}
-- Rédiger en *Markdown* {.fragment .fade-left}
-- Et *Zotero* dans tout ça... {.fragment .fade-left}
-- La magie *Pandoc* {.fragment .fade-left}
+- **Généralités**, histoire, définitions {.fragment .fade-left}
+- *Markdown*, syntaxe et **saveurs** {.fragment .fade-left}
+- Principes et outils pour **prendre des notes** en *Markdown* {.fragment .fade-left}
+- **Rédiger** en *Markdown* {.fragment .fade-left}
+- Et ***Zotero*** dans tout ça... {.fragment .fade-left}
+- La magie ***Pandoc*** {.fragment .fade-left}
 
 ---
 
@@ -58,7 +60,7 @@ julien.rabaud@univ-pau.fr | [@ujubib](https://twitter.com/ujubib)
 
 #### Généralités
 
-- ma veille zotero
+
 
 --
 
@@ -100,7 +102,7 @@ julien.rabaud@univ-pau.fr | [@ujubib](https://twitter.com/ujubib)
 
 --
 
-### Principes
+### Principes 
 
 Pas du markdown standard mais adoptés par tous ces outils (+ *Zettlr*)
 
@@ -127,13 +129,35 @@ Pas du markdown standard mais adoptés par tous ces outils (+ *Zettlr*)
 
 --
 
-##### éditeurs spécialisés
+### éditeurs spécialisés Recommandés
 
-- Zettlr
+- [Zettlr](https://www.zettlr.com/)
   - [Chaîne YouTube](https://youtube.com/c/Zettlr)
   - [documentation en français](https://docs.zettlr.com/fr/)
 
-- Typora
+- [Typora](https://typora.io)
+
+--
+
+### Liste d'éditeurs *Markdown* de Bureau
+
+- [PanWriter](https://panwriter.com/)
+- [Abricotine](https://github.com/brrd/abricotine)
+- [Apostrophe](https://somas.pages.gitlab.gnome.org/apostrophe/)
+- [Joplin](https://joplinapp.org/)
+- [KeenWrite](https://github.com/DaveJarvis/keenwrite)
+- [Markdown Monster](https://github.com/RickStrahl/MarkdownMonster) 
+  - (orienté blogging)
+
+--
+
+#### Liste d'éditeurs *Markdown* En ligne
+
+- [\_Stylo_](https://stylo.huma-num.fr/)
+  - (Pour l'écriture d'articles scientifiques, hébergé chez Huma-Num) {style=font-size:0.6em}
+- [Dillinger](https://dillinger.io/)
+- [HackMD](https://hackmd.io/pricing) 
+  - (Collaboratif) {style=font-size:0.6em}
 
 --
 
@@ -216,6 +240,7 @@ pandoc -r html https://fr.wikipedia.org/wiki/Aaron_Swartz -o AaronSwartz.docx
 
 pandoc -r html https://fr.wikipedia.org/wiki/Aaron_Swartz -o AaronSwartz.md
 ```
+
 --
 
 ### Usages
@@ -231,6 +256,8 @@ pandoc -r html https://fr.wikipedia.org/wiki/Aaron_Swartz -o AaronSwartz.md
     -o mémoire.docx 
     mémoire.md
   ```
+
+--
 
 - markdown vers html, avec bibliographie et sommaire (cliquables), template, css et javascript (ex: [Inventaire Blot](https://inventaire-blot.netlify.app/final2.html#ref-blotArcheologieMontagneBasque1993)) {style=font-size:0.6em;}
   ```
@@ -268,4 +295,7 @@ puis ouvrir avec un éditeur TeX ([Overleaf](https://www.overleaf.com) par exemp
 
 --
 
-## Contact
+## liens
+
+- ma veille Zotero : [Prendre des notes, écrire](https://www.zotero.org/ujubib/collections/KH8SQ49L)
+- 
