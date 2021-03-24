@@ -31,10 +31,10 @@ julien.rabaud@univ-pau.fr | [@ujubib](https://twitter.com/ujubib)
 
 - Bonjour
 - Je me présente
-- Tour de table : 
+- Tour de table :
   - Pourquoi êtes-vous là ?
   - Avec quoi prenez-vous des notes ?
-  - Avec quoi Rédigez-vous ?
+  - Avec quoi rédigez-vous ?
   - Utilisez-vous Zotero ?
   - Quel est votre éditeur de texte favori ?
 </aside>
