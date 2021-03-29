@@ -58,7 +58,23 @@ julien.rabaud@univ-pau.fr | [@ujubib](https://twitter.com/ujubib)
 
 --
 
-#### Généralités
+#### Fichiers binaires, fichiers textes
+
+- **Fichiers binaires** : nécessitent un logiciel spécifique pour être lus et édités : {.fragment .fade-left style=font-size:0.8em;}
+  - `.docx`, `.odt`, `.pdf`
+
+- **Fichiers textes** : lisibles et modifiables dans un simple éditeur de texte : {.fragment .fade-left style=font-size:0.8em;}
+  - `.md`, `.html`, `.tex`, `.rst`...
+
+<aside class="notes">
+
+dézipper un document word
+
+</aside>
+
+--
+
+#### Markdown
 
 > **Markdown** est un langage de balisage léger créé en 2004 par John Gruber avec l'aide d'Aaron Swartz. Il a été créé dans le but d'offrir une syntaxe facile à lire et à écrire. Un document balisé par Markdown peut être lu en l'état sans donner l’impression d'avoir été balisé ou formaté par des instructions particulières. {style=background-color:pink;color:darkred;text-align:justify;font-size:0.66em;padding:.5em}
 
@@ -89,22 +105,6 @@ Un petit mot sur Aaron Swartz
 - Balisage
 - Feuille de style
 
---
-
-#### Fichiers binaires, fichiers textes
-
-- **Fichiers binaires** : nécessitent un logiciel spécifique pour être lus et édités : {.fragment .fade-left style=font-size:0.8em;}
-  - `.docx`, `.odt`, `.pdf`
-
-- **Fichiers textes** : lisibles et modifiables dans un simple éditeur de texte : {.fragment .fade-left style=font-size:0.8em;}
-  - `.md`, `.html`, `.tex`, `.rst`...
-
-<aside class="notes">
-
-dézipper un document word
-
-</aside>
-
 ---
 
 <!-- .slide: data-background="https://64.media.tumblr.com/tumblr_ltyg0pGXaZ1qe6mn3o1_500.gif" -->
@@ -113,20 +113,56 @@ dézipper un document word
 
 --
 
-- Guides et tutoriels
-  - les bases : [Markdown Tutorial (multilingue)](https://markdowntutorial.com)
-  - GFM
-  - Pandoc
-
-
---
-
-- saveurs
+- Saveurs
   - CommonMark (ppdc)
   - Github Flavored Markdown
   - **Pandoc's Markdown**
+  - ...
 
 --
+
+- Guides et tutoriels
+  - les bases : [Markdown Tutorial (multilingue)](https://markdowntutorial.com)
+  - GFM : [Mastering Markdown](https://guides.github.com/features/mastering-markdown/)
+  - Pandoc : [Pandoc’s Markdown](https://pandoc.org/MANUAL.html#pandocs-markdown)
+
+--
+
+#### Syntaxe `inline`
+
+ markdown | html | affichage {style=font-size:0.8em;}
+---|---|---
+`*italique*` ou `_italique_`|`<em>italique</em>`|*italique* {style=font-size:0.7em;}
+`**gras**`|`<b>gras<b>`|**gras** {style=font-size:0.7em;}
+`***gras italique***`|`<b><em>gras italique</em></b>`|***gras italique*** {style=font-size:0.7em;}
+`~~barré~~`|`<s>barré</s>`|~~barré~~ {style=font-size:0.7em;}
+`XIX^e^`|`XIX<sup>e</sup>`|XIX<sup>e</sup> {style=font-size:0.7em;}
+`H~2~O`|`H<sub>2</sub>O`|H<sub>2</sub>O {style=font-size:0.7em;}
+`[texte](url)`|`<a href="url">texte</a>`|<a href="url">texte</a> {style=font-size:0.7em;}
+||
+
+--
+
+#### Syntaxe `block`
+
+- Titres
+- Paragraphes
+- Listes
+- Tableaux
+- Notes de bas ou de fin
+- Citations (*blockquote*)
+
+--
+
+
+#### Images 
+
+`![caption](img/UPPA_logo-rose.png)`
+![caption](img/UPPA_logo-rose.png)
+
+`<img src="img/UPPA_logo-rose.png" width=70px/>`
+
+<img src="img/UPPA_logo-rose.png" width=70px/>
 
 ---
 
@@ -142,7 +178,7 @@ Pas du markdown standard mais adoptés par tous ces outils (+ *Zettlr*)
 
   - `#tags`
   - `[[wikilinks]]`
-  - *Templates* (daily, note de lecture...)
+  - *Templates* (dailynote, note de lecture...)
 
 --
 
@@ -194,6 +230,7 @@ Pas du markdown standard mais adoptés par tous ces outils (+ *Zettlr*)
 - [Dillinger](https://dillinger.io/)
 - [HackMD](https://hackmd.io/pricing) 
   - (Collaboratif) {style=font-size:0.6em}
+- [SlackEdit](https://stackedit.io)
 
 --
 
@@ -202,7 +239,7 @@ Pas du markdown standard mais adoptés par tous ces outils (+ *Zettlr*)
 - Rstudio (avec Rmarkdown)
   - [Tutoriel officiel (en)](https://rmarkdown.rstudio.com/lesson-1.html)
   - [Tutoriel de *Coding Club* (en)](https://ourcodingclub.github.io/tutorials/rmarkdown/)
-  - 
+  - [R Markdown : les rapports automatisés](http://larmarange.github.io/analyse-R/rmarkdown-les-rapports-automatises.html) - analyse-R
 
 --
 
