@@ -16,7 +16,7 @@
   <link rel="stylesheet" href="libs/reveal.js/font-awesome-4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="libs/reveal.js/3.8.0/css/reveal.css">
   
-  <link rel="stylesheet" href="libs/reveal.js/3.8.0/css/theme/moon.css" id="theme">
+  <link rel="stylesheet" href="libs/reveal.js/3.8.0/css/theme/solarized.css" id="theme">
   
   
   <link rel="stylesheet" href="libs/reveal.js/3.8.0/plugin/title-footer/title-footer-mod.css" />
@@ -296,7 +296,7 @@
 <ul>
 <li>Pourquoi êtes-vous là ?</li>
 <li>Avec quoi prenez-vous des notes ?</li>
-<li>Avec quoi Rédigez-vous ?</li>
+<li>Avec quoi rédigez-vous ?</li>
 <li>Utilisez-vous Zotero ?</li>
 <li>Quel est votre éditeur de texte favori ?</li>
 </ul>
@@ -309,12 +309,12 @@
             <section >
                 <h3 style="color:coral"><a id="user-content-déroulé" class="anchor" href="#déroulé" aria-hidden="true"></a>Déroulé</h3>
 <ul>
-<li class="fragment fade-left">Généralités, histoire, définitions</li>
-<li class="fragment fade-left"><em>Markdown</em>, syntaxes et saveurs</li>
-<li class="fragment fade-left">Principes et outils pour prendre des notes en <em>Markdown</em></li>
-<li class="fragment fade-left">Rédiger en <em>Markdown</em></li>
-<li class="fragment fade-left">Et <em>Zotero</em> dans tout ça…</li>
-<li class="fragment fade-left">La magie <em>Pandoc</em></li>
+<li class="fragment fade-left"><strong>Généralités</strong>, histoire, définitions</li>
+<li class="fragment fade-left"><em>Markdown</em>, syntaxe et <strong>saveurs</strong></li>
+<li class="fragment fade-left">Principes et outils pour <strong>prendre des notes</strong> en <em>Markdown</em></li>
+<li class="fragment fade-left"><strong>Rédiger</strong> en <em>Markdown</em></li>
+<li class="fragment fade-left">Et <em><strong>Zotero</strong></em> dans tout ça…</li>
+<li class="fragment fade-left">La magie <em><strong>Pandoc</strong></em></li>
 </ul>
 
             </section>
@@ -329,17 +329,25 @@
     <section>
         <section data-background="https://64.media.tumblr.com/tumblr_lyfuwzuR0K1qh3ft3o1_500.gif">
             <!-- .slide: data-background="https://64.media.tumblr.com/tumblr_lyfuwzuR0K1qh3ft3o1_500.gif" -->
-<h2 style="color:coral"><a id="user-content-généralités-histoire-définitions" class="anchor" href="#généralités-histoire-définitions" aria-hidden="true"></a>Généralités, histoire, définitions</h2>
+<h2 style="color:coral"><a id="user-content-généralités-définitions" class="anchor" href="#généralités-définitions" aria-hidden="true"></a>Généralités, définitions</h2>
 
             </section>
         
             <section >
                 <h4><a id="user-content-généralités" class="anchor" href="#généralités" aria-hidden="true"></a>Généralités</h4>
-
-            </section>
-        
-            <section >
-                <h4><a id="user-content-histoire" class="anchor" href="#histoire" aria-hidden="true"></a>Histoire</h4>
+<blockquote style="background-color:pink;color:darkred;text-align:justify;font-size:0.66em;padding:.5em">
+<p><strong>Markdown</strong> est un langage de balisage léger créé en 2004 par John Gruber avec l’aide d’Aaron Swartz. Il a été créé dans le but d’offrir une syntaxe facile à lire et à écrire. Un document balisé par Markdown peut être lu en l’état sans donner l’impression d’avoir été balisé ou formaté par des instructions particulières.</p>
+</blockquote>
+<p style="font-size:0.5em;text-align:right;margin-right:130px;">Wikipedia (fr) : <a href="https://en.wikipedia.org/wiki/Markdown">Markdown</a></p>
+<hr>
+<p style="font-size:0.6em;text-align:left;margin-left:150px;">&gt; <a href="https://daringfireball.net/projects/markdown/">Le site de John Gruber</a></p>
+<p style="font-size:0.6em;text-align:left;margin-left:150px;">&gt; <a href="http://www.aaronsw.com/weblog/001189">Le billet du regretté Aaron Swartz</a></p>
+<hr>
+<p style="font-size:0.4em;text-align:right;margin-right:130px;margin-left:150px;">#CultureNum : documentaire <a href="https://peertube.mxinfo.fr/videos/watch/8b676d61-0be2-46e4-929f-27f482492f8b">The Internet’s Own Boy: The Story of Aaron Swartz</a><br>
+(sous-titres en plusieurs langues disponibles)</p>
+<aside class="notes">
+<p>Un petit mot sur Aaron Swartz</p>
+</aside>
 
             </section>
         
@@ -347,9 +355,31 @@
                 <h4><a id="user-content-définitions" class="anchor" href="#définitions" aria-hidden="true"></a>Définitions</h4>
 <ul>
 <li>Structuration</li>
-<li>balisage</li>
-<li>feuille de style</li>
+<li>Balisage</li>
+<li>Feuille de style</li>
 </ul>
+
+            </section>
+        
+            <section >
+                <h4><a id="user-content-fichiers-binaires-fichiers-textes" class="anchor" href="#fichiers-binaires-fichiers-textes" aria-hidden="true"></a>Fichiers binaires, fichiers textes</h4>
+<ul>
+<li class="fragment fade-left" style="font-size:0.8em;">
+<p><strong>Fichiers binaires</strong> : nécessitent un logiciel spécifique pour être lus et édités :</p>
+<ul>
+<li><code>.docx</code>, <code>.odt</code>, <code>.pdf</code></li>
+</ul>
+</li>
+<li class="fragment fade-left" style="font-size:0.8em;">
+<p><strong>Fichiers textes</strong> : lisibles et modifiables dans un simple éditeur de texte :</p>
+<ul>
+<li><code>.md</code>, <code>.html</code>, <code>.tex</code>, <code>.rst</code>…</li>
+</ul>
+</li>
+</ul>
+<aside class="notes">
+<p>dézipper un document word</p>
+</aside>
 
             </section>
         
@@ -369,11 +399,11 @@
         
             <section >
                 <ul>
-<li>saveurs
+<li>Guides et tutoriels
 <ul>
-<li>CommonMark (ppdc)</li>
-<li>Github Flavored Markdown</li>
-<li><strong>Pandoc’s Markdown</strong></li>
+<li>les bases : <a href="https://markdowntutorial.com">Markdown Tutorial (multilingue)</a></li>
+<li>GFM</li>
+<li>Pandoc</li>
 </ul>
 </li>
 </ul>
@@ -382,14 +412,15 @@
         
             <section >
                 <ul>
-<li>Tutoriels
+<li>saveurs
 <ul>
-<li>Standard</li>
-<li>GFM</li>
-<li>Pandoc</li>
+<li>CommonMark (ppdc)</li>
+<li>Github Flavored Markdown</li>
+<li><strong>Pandoc’s Markdown</strong></li>
 </ul>
 </li>
 </ul>
+<p>–</p>
 
             </section>
         
@@ -485,13 +516,18 @@
             <section >
                 <h4><a id="user-content-liste-déditeurs-markdown-en-ligne" class="anchor" href="#liste-déditeurs-markdown-en-ligne" aria-hidden="true"></a>Liste d’éditeurs <em>Markdown</em> En ligne</h4>
 <ul>
-<li><a href="https://stylo.huma-num.fr/">_Stylo_</a>
+<li>
+<p><a href="https://stylo.huma-num.fr/">_Stylo_</a></p>
 <ul>
-<li style="font-size:0.6em">(Pour l’écriture d’articles scientifiques, hébergé chez Huma-Num)</li>
+<li style="font-size:0.6em">(Pour l’écriture d’articles scientifiques, hébergé chez <a href="https://stylo.huma-num.fr/">Huma-Num</a>)</li>
+<li style="font-size:0.6em">M. Vitali-Rosati, « <a href="http://blog.sens-public.org/marcellovitalirosati/stylo/">Stylo : un éditeur de texte pour les sciences humaines et sociales</a> », <em>Culture numérique</em>, 2018.</li>
 </ul>
 </li>
-<li><a href="https://dillinger.io/">Dillinger</a></li>
-<li><a href="https://hackmd.io/pricing">HackMD</a>
+<li>
+<p><a href="https://dillinger.io/">Dillinger</a></p>
+</li>
+<li>
+<p><a href="https://hackmd.io/pricing">HackMD</a></p>
 <ul>
 <li style="font-size:0.6em">(Collaboratif)</li>
 </ul>
@@ -503,27 +539,34 @@
             <section >
                 <h5><a id="user-content-éditeurs-généralistes" class="anchor" href="#éditeurs-généralistes" aria-hidden="true"></a>éditeurs généralistes</h5>
 <ul>
-<li>Rstudio (avec Rmarkdown)</li>
+<li>Rstudio (avec Rmarkdown)
+<ul>
+<li><a href="https://rmarkdown.rstudio.com/lesson-1.html">Tutoriel officiel (en)</a></li>
+<li><a href="https://ourcodingclub.github.io/tutorials/rmarkdown/">Tutoriel de <em>Coding Club</em> (en)</a></li>
+<li></li>
+</ul>
+</li>
 </ul>
 
             </section>
         
             <section >
                 <ul>
-<li><strong>VS Code</strong> avec quelques extensions :
+<li style="font-size:0.6em"><strong>VS Code</strong> avec quelques extensions :
 <ul>
-<li>Markdown Extension Pack :
+<li class="fragment fade-left">Markdown Extension Pack :
 <ul>
 <li>Markdown All in One</li>
 <li>Markdown PDF</li>
 <li>Mardown Image</li>
 <li>markdownlint</li>
-<li>Markdown Preview Github Style (désinstallée)</li>
-<li>Grammarly (unofficial)</li>
+<li>Markdown Preview Github Style (<em>désinstallée</em>)</li>
+<li>Grammarly (unofficial) (english only)</li>
 </ul>
 </li>
-<li>Markdown Footnote</li>
-<li>(Markdown Fiction Writer)</li>
+<li class="fragment fade-left">Pandoc Markdown Preview</li>
+<li class="fragment fade-left">Markdown Footnote</li>
+<li class="fragment fade-left">(Markdown Fiction Writer)</li>
 </ul>
 </li>
 </ul>

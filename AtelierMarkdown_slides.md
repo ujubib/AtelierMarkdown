@@ -54,25 +54,56 @@ julien.rabaud@univ-pau.fr | [@ujubib](https://twitter.com/ujubib)
 
 <!-- .slide: data-background="https://64.media.tumblr.com/tumblr_lyfuwzuR0K1qh3ft3o1_500.gif" -->
 
-## Généralités, histoire, définitions {style=color:coral}
+## Généralités, définitions {style=color:coral}
 
 --
 
 #### Généralités
 
+> **Markdown** est un langage de balisage léger créé en 2004 par John Gruber avec l'aide d'Aaron Swartz. Il a été créé dans le but d'offrir une syntaxe facile à lire et à écrire. Un document balisé par Markdown peut être lu en l'état sans donner l’impression d'avoir été balisé ou formaté par des instructions particulières. {style=background-color:pink;color:darkred;text-align:justify;font-size:0.66em;padding:.5em}
+
+Wikipedia (fr) : [Markdown](https://en.wikipedia.org/wiki/Markdown) {style=font-size:0.5em;text-align:right;margin-right:130px;}
+
+***
+
+\> [Le site de John Gruber](https://daringfireball.net/projects/markdown/) {style=font-size:0.6em;text-align:left;margin-left:150px;}
+
+\> [Le billet du regretté Aaron Swartz](http://www.aaronsw.com/weblog/001189) {style=font-size:0.6em;text-align:left;margin-left:150px;}
+
+***
+
+#CultureNum : documentaire [The Internet's Own Boy: The Story of Aaron Swartz](https://peertube.mxinfo.fr/videos/watch/8b676d61-0be2-46e4-929f-27f482492f8b)  
+(sous-titres en plusieurs langues disponibles) {style=font-size:0.4em;text-align:right;margin-right:130px;margin-left:150px;}
 
 
---
+<aside class="notes">
 
-#### Histoire
+Un petit mot sur Aaron Swartz
+</aside>
 
 --
 
 #### Définitions
 
 - Structuration
-- balisage
-- feuille de style
+- Balisage
+- Feuille de style
+
+--
+
+#### Fichiers binaires, fichiers textes
+
+- **Fichiers binaires** : nécessitent un logiciel spécifique pour être lus et édités : {.fragment .fade-left style=font-size:0.8em;}
+  - `.docx`, `.odt`, `.pdf`
+
+- **Fichiers textes** : lisibles et modifiables dans un simple éditeur de texte : {.fragment .fade-left style=font-size:0.8em;}
+  - `.md`, `.html`, `.tex`, `.rst`...
+
+<aside class="notes">
+
+dézipper un document word
+
+</aside>
 
 ---
 
@@ -82,17 +113,20 @@ julien.rabaud@univ-pau.fr | [@ujubib](https://twitter.com/ujubib)
 
 --
 
+- Guides et tutoriels
+  - les bases : [Markdown Tutorial (multilingue)](https://markdowntutorial.com)
+  - GFM
+  - Pandoc
+
+
+--
+
 - saveurs
   - CommonMark (ppdc)
   - Github Flavored Markdown
   - **Pandoc's Markdown**
 
 --
-
-- Tutoriels
-  - Standard
-  - GFM
-  - Pandoc
 
 ---
 
@@ -154,7 +188,9 @@ Pas du markdown standard mais adoptés par tous ces outils (+ *Zettlr*)
 #### Liste d'éditeurs *Markdown* En ligne
 
 - [\_Stylo_](https://stylo.huma-num.fr/)
-  - (Pour l'écriture d'articles scientifiques, hébergé chez Huma-Num) {style=font-size:0.6em}
+  - (Pour l'écriture d'articles scientifiques, hébergé chez [Huma-Num](https://stylo.huma-num.fr/)) {style=font-size:0.6em}
+  - M. Vitali-Rosati, « [Stylo : un éditeur de texte pour les sciences humaines et sociales](http://blog.sens-public.org/marcellovitalirosati/stylo/) », *Culture numérique*, 2018. {style=font-size:0.6em}
+
 - [Dillinger](https://dillinger.io/)
 - [HackMD](https://hackmd.io/pricing) 
   - (Collaboratif) {style=font-size:0.6em}
@@ -164,19 +200,23 @@ Pas du markdown standard mais adoptés par tous ces outils (+ *Zettlr*)
 ##### éditeurs généralistes
 
 - Rstudio (avec Rmarkdown)
+  - [Tutoriel officiel (en)](https://rmarkdown.rstudio.com/lesson-1.html)
+  - [Tutoriel de *Coding Club* (en)](https://ourcodingclub.github.io/tutorials/rmarkdown/)
+  - 
 
 --
 
-- **VS Code** avec quelques extensions : 
-  - Markdown Extension Pack :
+- **VS Code** avec quelques extensions : {style=font-size:0.6em}
+  - Markdown Extension Pack : {.fragment .fade-left}
     - Markdown All in One
     - Markdown PDF
     - Mardown Image
     - markdownlint
-    - Markdown Preview Github Style (désinstallée)
-    - Grammarly (unofficial)
-  - Markdown Footnote
-  - (Markdown Fiction Writer)
+    - Markdown Preview Github Style (*désinstallée*)
+    - Grammarly (unofficial) (english only)
+  - Pandoc Markdown Preview {.fragment .fade-left}
+  - Markdown Footnote {.fragment .fade-left}
+  - (Markdown Fiction Writer) {.fragment .fade-left}
 
 ---
 
