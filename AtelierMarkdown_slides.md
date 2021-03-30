@@ -114,18 +114,35 @@ Un petit mot sur Aaron Swartz
 --
 
 - Saveurs
-  - CommonMark (ppdc)
-  - Github Flavored Markdown
+  - CommonMark (*ppdc*)
+  - Github Flavored Markdown (GFM)
+  - MultiMarkdown (*MacOS, révision*)
   - **Pandoc's Markdown**
+  - Rmarkdown (`.rmd`)
   - ...
 
 --
 
 - Guides et tutoriels
-  - les bases : [Markdown Tutorial (multilingue)](https://markdowntutorial.com)
+  - intéractif : [Markdown Tutorial (multilingue)](https://markdowntutorial.com)
   - GFM : [Mastering Markdown](https://guides.github.com/features/mastering-markdown/)
+  - [Markdown Guide](https://markdownguide.org) (*voir diapo suivante*)
   - Pandoc : [Pandoc’s Markdown](https://pandoc.org/MANUAL.html#pandocs-markdown)
 
+--
+
+#### [Markdown Guide](https://markdownguide.org)
+
+Le plus clair, complet(*) et synthétique
+
+- [Markdown Cheat Sheet](https://markdownguide.org/cheat-sheet)
+- [Basic Syntax](https://markdownguide.org/basic-syntax)
+- [Extended Syntax](https://markdownguide.org/extended-syntax)
+- [Tools](https://markdownguide.org/tools)
+<!-- -->
+
+(\*) *Ne traite pas des références bibliographiques, spécificité de **Pandoc**.  
+Voir [Manuel Pandoc, Citations](https://pandoc.org/MANUAL.html#citations)* {style=font-size:0.7em;color:hotpink}
 --
 
 #### Syntaxe `inline`
@@ -139,30 +156,19 @@ Un petit mot sur Aaron Swartz
 `XIX^e^`|`XIX<sup>e</sup>`|XIX<sup>e</sup> {style=font-size:0.7em;}
 `H~2~O`|`H<sub>2</sub>O`|H<sub>2</sub>O {style=font-size:0.7em;}
 `[texte](url)`|`<a href="url">texte</a>`|<a href="url">texte</a> {style=font-size:0.7em;}
+`[texte]{.style}`|`<span class="style">texte</span>`|texte {style=font-size:0.7em;}
 ||
-
 --
-
-#### Syntaxe `block`
-
-- Titres
-- Paragraphes
-- Listes
-- Tableaux
-- Notes de bas ou de fin
-- Citations (*blockquote*)
-
---
-
 
 #### Images 
 
-`![caption](img/UPPA_logo-rose.png)`
-![caption](img/UPPA_logo-rose.png)
+`![caption](img/UPPA_logo-rose.png){width=160px}` {style=font-size:0.8em;}
 
-`<img src="img/UPPA_logo-rose.png" width=70px/>`
+![caption](img/UPPA_logo-rose.png){width=160px}
 
-<img src="img/UPPA_logo-rose.png" width=70px/>
+`<img src="img/UPPA_logo-rose.png" alt="caption" width=160px/>` {style=font-size:0.8em;}
+
+<img src="img/UPPA_logo-rose.png" alt="caption" width=160px/>
 
 ---
 
@@ -226,22 +232,14 @@ Pas du markdown standard mais adoptés par tous ces outils (+ *Zettlr*)
 - [\_Stylo_](https://stylo.huma-num.fr/)
   - (Pour l'écriture d'articles scientifiques, hébergé chez [Huma-Num](https://stylo.huma-num.fr/)) {style=font-size:0.6em}
   - M. Vitali-Rosati, « [Stylo : un éditeur de texte pour les sciences humaines et sociales](http://blog.sens-public.org/marcellovitalirosati/stylo/) », *Culture numérique*, 2018. {style=font-size:0.6em}
-
 - [Dillinger](https://dillinger.io/)
-- [HackMD](https://hackmd.io/pricing) 
-  - (Collaboratif) {style=font-size:0.6em}
+- [HackMD](https://hackmd.io/pricing) (*Collaboratif, inscription*) 
+- [HedgeDoc](https://hedgedoc.org) (*Collaboratif, à installer sur un serveur*)
 - [SlackEdit](https://stackedit.io)
 
 --
 
 ##### éditeurs généralistes
-
-- Rstudio (avec Rmarkdown)
-  - [Tutoriel officiel (en)](https://rmarkdown.rstudio.com/lesson-1.html)
-  - [Tutoriel de *Coding Club* (en)](https://ourcodingclub.github.io/tutorials/rmarkdown/)
-  - [R Markdown : les rapports automatisés](http://larmarange.github.io/analyse-R/rmarkdown-les-rapports-automatises.html) - analyse-R
-
---
 
 - **VS Code** avec quelques extensions : {style=font-size:0.6em}
   - Markdown Extension Pack : {.fragment .fade-left}
@@ -250,10 +248,18 @@ Pas du markdown standard mais adoptés par tous ces outils (+ *Zettlr*)
     - Mardown Image
     - markdownlint
     - Markdown Preview Github Style (*désinstallée*)
-    - Grammarly (unofficial) (english only)
+    - Grammarly (unofficial) (*english only*)
   - Pandoc Markdown Preview {.fragment .fade-left}
   - Markdown Footnote {.fragment .fade-left}
   - (Markdown Fiction Writer) {.fragment .fade-left}
+  - ... {.fragment .fade-left}
+
+--
+
+- Rstudio (avec Rmarkdown)
+  - [Tutoriel officiel (en)](https://rmarkdown.rstudio.com/lesson-1.html)
+  - [Tutoriel de *Coding Club* (en)](https://ourcodingclub.github.io/tutorials/rmarkdown/)
+  - [R Markdown : les rapports automatisés](http://larmarange.github.io/analyse-R/rmarkdown-les-rapports-automatises.html) - *analyse-R*
 
 ---
 
@@ -267,12 +273,14 @@ Pas du markdown standard mais adoptés par tous ces outils (+ *Zettlr*)
 
 - [Better BibteX for Zotero](https://retorque.re/zotero-better-bibtex/) : **Indispensable** {style=font-size:0.6em;} {.fragment}
   
-   exporte vos références dans un fichier (`.json` ou `.bib`) et garde le fichier synchronisé {style=font-size:0.6em;}
+   \> Exporte vos références dans un fichier (`.json` ou `.bib`) et garde le fichier synchronisé {style=font-size:0.6em;}
+
+   \> Ajoute un convertisseur pour le *Quick Copy* (<kbd>ctrl</kbd>+<kbd>shift</kbd>+<kbd>c</kbd>) {style=font-size:0.6em;}
   - [Documentation pour Markdown/Pandoc](https://retorque.re/zotero-better-bibtex/exporting/pandoc/) {style=font-size:0.6em;}
 
 - [Mdnotes for Zotero](https://github.com/argenos/zotero-mdnotes) : *bientôt dépréciée ?* {style=font-size:0.6em;} {.fragment}
   
-  exporte en markdown (*vers un dossier obsidian ou zettlr*) {style=font-size:0.6em;}
+  Exporte en markdown (*vers un dossier pour obsidian ou zettlr*) {style=font-size:0.6em;}
   - les métadonnées de la référence {style=font-size:0.6em;}
   - vos notes (qui peuvent avoir été extraites des pdf par [ZotFile](http://zotfile.com)) {style=font-size:0.6em;}
 
@@ -284,14 +292,11 @@ Pas du markdown standard mais adoptés par tous ces outils (+ *Zettlr*)
 
 #### Extensions pour éditeurs
 
-- VS Code : gestionnaire de plugin
-- Obsidian
-  - sur le forum d'Obsidian : [Zotero best practices](https://forum.obsidian.md/t/zotero-best-practices/164)
-- Zettlr : voir la section dédiée dans la doc
+- **VS Code** : gestionnaire de plugin
 
---
+- **Obsidian** : sur le forum, [Zotero best practices](https://forum.obsidian.md/t/zotero-best-practices/164)
 
-C'est [Pandoc](https://pandoc.org/) qui assemble tout !
+- Documentation **Zettlr** : [Citer avec Zettlr](https://docs.zettlr.com/fr/academic/citations/)
 
 ---
 
@@ -356,7 +361,7 @@ pandoc -r html https://fr.wikipedia.org/wiki/Aaron_Swartz -o AaronSwartz.md
 
 Une bonne porte d'entrée vers
 
-<img height=250 src="img/latexColor.png" style="border-style:none;"/>
+<img height=200 src="img/latexColor.png" style="border-style:none;"/>
 
 ```bash
 pandoc -f markdown -t latex -o mémoire.tex mémoire.md
@@ -366,13 +371,14 @@ puis ouvrir avec un éditeur TeX ([Overleaf](https://www.overleaf.com) par exemp
 
 ---
 
-<!-- .slide: data-background="https://64.media.tumblr.com/ad127a0f2b60979c5b370d4e3349805b/tumblr_miyqamrPc71rnimpto1_500.gif" -->
+<!-- .slide: data-background="https://64.media.tumblr.com/tumblr_luw9nk0Miu1qe6mn3o1_500.gif	" -->
 
 ## Merci de votre attention {style=color:coral}
 
 --
 
-## liens
+#### Bonus
 
-- ma veille Zotero : [Prendre des notes, écrire](https://www.zotero.org/ujubib/collections/KH8SQ49L)
-- 
+- Ma veille Zotero sur l'écriture en mode texte : [Prendre des notes, écrire](https://www.zotero.org/ujubib/collections/KH8SQ49L) {style=font-size:0.7em;}
+- [Le blog de Hendrik Herz](https://www.hendrik-erz.de/blog) (le doctorant qui développe Zettlr) {style=font-size:0.7em;}
+  - notament le billet : [How I work, Part IV: Reference Management & Reading Literature](https://www.hendrik-erz.de/blog)
