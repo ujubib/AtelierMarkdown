@@ -11,6 +11,7 @@ previewLinks: true
 preloadIframes: true
 
 ---
+
 <style type="text/css">
 code {
   background-color:darkred;
@@ -36,7 +37,7 @@ UPPA -- *Service Commun de la Documentation*
 
 Julien Rabaud (*Service d'appui à la recherche*)  
 julien.rabaud@univ-pau.fr | [@ujubib](https://twitter.com/ujubib)  
-\-- Mars 2021 -- {style=font-size:0.5em;color:coral;background-color:;border-radius:15px;padding:3px;;width:42%;text-align:center;margin-left:auto;margin-right:auto;border-style:solid;border-color:coral;border-width:2px;opacity:.7;}
+v.2021.09 {style=font-size:0.5em;color:coral;background-color:;border-radius:15px;padding:3px;;width:42%;text-align:center;margin-left:auto;margin-right:auto;border-style:solid;border-color:coral;border-width:2px;opacity:.7;}
 
 <aside class="notes">
 
@@ -93,13 +94,13 @@ julien.rabaud@univ-pau.fr | [@ujubib](https://twitter.com/ujubib)
 
 ### Déroulé {style=color:DeepPink}
 
-- **Généralités**, histoire, définitions [→](#/2) {.fragment .fade-left style=color:DarkOrange}
-- *Markdown*, syntaxe et **saveurs** [→](#/3) {.fragment .fade-left style=color:DarkOrange}
-- **Prendre des notes** en *Markdown* [→](#/4) {.fragment .fade-left style=color:DarkOrange}
-- **Rédiger** en *Markdown* [→](#/5) {.fragment .fade-left style=color:DarkOrange}
-- Et ***Zotero*** dans tout ça... [→](#/6) {.fragment .fade-left style=color:DarkOrange}
-- La magie ***Pandoc*** [→](#/7) {.fragment .fade-left style=color:DarkOrange}
-- Extensions (*diaporama*, *diagrammes*, *mindmap*) [→](#/8) {.fragment .fade-left style=color:DarkOrange}
+- **Généralités**, histoire, définitions [→](#/2) {.fade-left style=color:DarkOrange}
+- *Markdown*, syntaxe et **saveurs** [→](#/3) {.fade-left style=color:DarkOrange}
+- **Prendre des notes** en *Markdown* [→](#/4) {.fade-left style=color:DarkOrange}
+- **Rédiger** en *Markdown* [→](#/5) {.fade-left style=color:DarkOrange}
+- Et ***Zotero*** dans tout ça... [→](#/6) {.fade-left style=color:DarkOrange}
+- La magie ***Pandoc*** [→](#/7) {.fade-left style=color:DarkOrange}
+- Extensions (*diaporama*, *diagrammes*, *mindmap*) [→](#/8) {.fade-left style=color:DarkOrange}
 
 ---
 
