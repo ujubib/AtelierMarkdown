@@ -24,3 +24,14 @@ pandoc -f markdown -t revealjs -s --slide-level=3 -V revealjs-url=data/reveal.js
 ```
 pandoc --self-contained IdNum2020fr.md -o presMars.html -f markdown -t revealjs -s -c data/prez.css --slide-level=3 -V theme=solarized
 ```
+[Visitez GitHub !](www.github.com) 
+
+(1) Lejeune, P. Moi aussi; Poétique; Éd. du Seuil: Paris, 1986.
+<!-- [@lejeuneMoiAussi1986] -->
+
+
+[texte @lejeuneMoiAussi1986, p.12 texte après]
+
+[@doubrovskyAutobiographiquesCorneilleSartre1988]
+
+texte{.ul} 

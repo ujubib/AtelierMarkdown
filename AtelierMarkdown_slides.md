@@ -62,10 +62,11 @@ v.2021.09 {style=font-size:0.5em;color:coral;background-color:;border-radius:15p
 - Émilien Ruiz : [*Apprendre à écrire ?*](http://www.boiteaoutils.info/2020/04/apprendre-ecrire/) -  La boîte à outils des historien·ne·s, avril 2020. {style=font-size:0.5em;}
 - Éliane Caillou : [*"Stylo" : l'éditeur de texte SHS d'Huma-Num*](https://cometdoc.hypotheses.org/1147) - com&doc, novembre 2020. {style=font-size:0.5em;}
 - Sur [Le blog d'Arthur Perret](https://www.arthurperret.fr/) (*doctorant en SIC à Bordeaux*) : {style=font-size:0.5em;}
+  - [L’écriture académique au format texte](https://www.arthurperret.fr/2021-09-21-ecriture-academique-format-texte.html), septembre 2021 (*Notes de la formation (2h) qu’il a animé à l’URFIST de Bordeaux le 21 septembre 2021*). 
   - [*Écrire et éditer*](https://www.arthurperret.fr/ecrire-et-editer.html), mai 2020.
-  - [*Enseignement et automatisation avec Pandoc*](https://www.arthurperret.fr/enseignement-automatisation-pandoc.html), novembre 2020
+  - [*Enseignement et automatisation avec Pandoc*](https://www.arthurperret.fr/enseignement-automatisation-pandoc.html), novembre 2020.
   - [*Recommandation : Zettlr*](https://www.arthurperret.fr/recommandation-zettlr.html), septembre 2019.
-- [Mentions du format Markdown](http://www.these.robindemourat.com/glossary/69fc8e7f-a5ca-4d78-8367-b92cf8f9a480) dans la thèse (*Esthétique et Arts appliqués*, Rennes, 2020) de Robin de Mourat : *Le Vacillement des formats. Matérialité, écriture et enquête : le design des publications en Sciences Humaines et Sociales*. {style=font-size:0.5em;}
+
 
 --
 
@@ -86,7 +87,7 @@ v.2021.09 {style=font-size:0.5em;color:coral;background-color:;border-radius:15p
   - [*How I work* [V] : *Zettlr and Academic Markdown*](https://www.hendrik-erz.de/post/how-i-work-part-v-zettlr-and-academic-markdown)
 - [Academic Pandoc template](https://maehr.github.io/academic-pandoc-template/markdown.html) : Pour comprendre certaines options de Pandoc. {style=font-size:0.5em;}
 
-- [Prendre des notes, écrire](https://www.zotero.org/ujubib/collections/KH8SQ49L) : ma collection *Zotero* de veille sur l'écriture en mode texte. {style=font-size:0.5em;}
+- [Mentions du format Markdown](http://www.these.robindemourat.com/glossary/69fc8e7f-a5ca-4d78-8367-b92cf8f9a480) dans la thèse (*Esthétique et Arts appliqués*, Rennes, 2020) de Robin de Mourat : *Le Vacillement des formats. Matérialité, écriture et enquête : le design des publications en Sciences Humaines et Sociales*. {style=font-size:0.5em;}
 
 --
 
@@ -271,20 +272,24 @@ Extensions pour *VS Code* {style=color:DeepPink;text-align:left;}
 
 #### Obsidian.md
 
-![Interface générale](img/)
+![Interface générale](img/Obsidian1.png)
+
+interface générale {style=font-size:.8em;}
 
 <aside class="notes">
 
 Pour les copies d'écran, une thème différent à chaque fois
 
-ici : 
+ici : Sombre, Aucun Thème
 </aside>
 
 --
 
 #### Obsidian.md
 
-![graphview]()
+![graphview](img/ObsidianGraphview.png)
+
+GraphView (Thème : *Pisum*) {style=font-size:.8em;}
 
 <aside class="notes">
 
