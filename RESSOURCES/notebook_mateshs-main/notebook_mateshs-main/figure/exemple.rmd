@@ -1,0 +1,40 @@
+---
+title: "Documenter mes traitements"
+output: html_document
+---
+
+<img src="https://gapn.hypotheses.org/files/2020/10/mate-300x61.jpg" width="100%">
+
+## Introduction
+
+Ce document présente une **chaîne de traitement statistique** appliquée à des données particulières...
+
+### Les données 
+Tableau de données utilisé :
+
+```{r chunk1, eval=TRUE, echo=FALSE}
+DT::datatable(cars,  options = list(pageLength = 5))
+```
+
+### Résumé statistique
+
+```{r chunk2, eval=TRUE, echo=TRUE}
+summary(cars)
+```
+
+## Visualisation
+
+Visualisons les données, mais je ne vous montre pas mon code !
+
+```{r plot, echo=FALSE, fig.height=4, fig.width=10}
+plot(cars,
+     pch = 20, 
+     cex = 3, 
+     col= "red")    
+```
+
+## Info session
+
+```{r , echo=FALSE, fig.height=8, fig.width=10}
+sessionInfo()    
+```

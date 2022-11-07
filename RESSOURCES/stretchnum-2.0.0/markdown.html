@@ -1,0 +1,594 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <meta name="author" content="Damien Belvèze" />
+  <meta name="dcterms.date" content="2022-10-03" />
+  <title>Markdown comme syntaxe universelle</title>
+  <style>
+    html {
+      line-height: 1.5;
+      font-family: Georgia, serif;
+      font-size: 20px;
+      color: #1a1a1a;
+      background-color: #fdfdfd;
+    }
+    body {
+      margin: 0 auto;
+      max-width: 36em;
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      hyphens: auto;
+      overflow-wrap: break-word;
+      text-rendering: optimizeLegibility;
+      font-kerning: normal;
+    }
+    @media (max-width: 600px) {
+      body {
+        font-size: 0.9em;
+        padding: 1em;
+      }
+      h1 {
+        font-size: 1.8em;
+      }
+    }
+    @media print {
+      body {
+        background-color: transparent;
+        color: black;
+        font-size: 12pt;
+      }
+      p, h2, h3 {
+        orphans: 3;
+        widows: 3;
+      }
+      h2, h3, h4 {
+        page-break-after: avoid;
+      }
+    }
+    p {
+      margin: 1em 0;
+    }
+    a {
+      color: #1a1a1a;
+    }
+    a:visited {
+      color: #1a1a1a;
+    }
+    img {
+      max-width: 100%;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      margin-top: 1.4em;
+    }
+    h5, h6 {
+      font-size: 1em;
+      font-style: italic;
+    }
+    h6 {
+      font-weight: normal;
+    }
+    ol, ul {
+      padding-left: 1.7em;
+      margin-top: 1em;
+    }
+    li > ol, li > ul {
+      margin-top: 0;
+    }
+    blockquote {
+      margin: 1em 0 1em 1.7em;
+      padding-left: 1em;
+      border-left: 2px solid #e6e6e6;
+      color: #606060;
+    }
+    code {
+      font-family: Menlo, Monaco, 'Lucida Console', Consolas, monospace;
+      font-size: 85%;
+      margin: 0;
+    }
+    pre {
+      margin: 1em 0;
+      overflow: auto;
+    }
+    pre code {
+      padding: 0;
+      overflow: visible;
+      overflow-wrap: normal;
+    }
+    .sourceCode {
+     background-color: transparent;
+     overflow: visible;
+    }
+    hr {
+      background-color: #1a1a1a;
+      border: none;
+      height: 1px;
+      margin: 1em 0;
+    }
+    table {
+      margin: 1em 0;
+      border-collapse: collapse;
+      width: 100%;
+      overflow-x: auto;
+      display: block;
+      font-variant-numeric: lining-nums tabular-nums;
+    }
+    table caption {
+      margin-bottom: 0.75em;
+    }
+    tbody {
+      margin-top: 0.5em;
+      border-top: 1px solid #1a1a1a;
+      border-bottom: 1px solid #1a1a1a;
+    }
+    th {
+      border-top: 1px solid #1a1a1a;
+      padding: 0.25em 0.5em 0.25em 0.5em;
+    }
+    td {
+      padding: 0.125em 0.5em 0.25em 0.5em;
+    }
+    header {
+      margin-bottom: 4em;
+      text-align: center;
+    }
+    #TOC li {
+      list-style: none;
+    }
+    #TOC ul {
+      padding-left: 1.3em;
+    }
+    #TOC > ul {
+      padding-left: 0;
+    }
+    #TOC a:not(:hover) {
+      text-decoration: none;
+    }
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    span.underline{text-decoration: underline;}
+    div.column{display: inline-block; vertical-align: top; width: 50%;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    ul.task-list{list-style: none;}
+    pre > code.sourceCode { white-space: pre; position: relative; }
+    pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+    pre > code.sourceCode > span:empty { height: 1.2em; }
+    .sourceCode { overflow: visible; }
+    code.sourceCode > span { color: inherit; text-decoration: inherit; }
+    div.sourceCode { margin: 1em 0; }
+    pre.sourceCode { margin: 0; }
+    @media screen {
+    div.sourceCode { overflow: auto; }
+    }
+    @media print {
+    pre > code.sourceCode { white-space: pre-wrap; }
+    pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+    }
+    pre.numberSource code
+      { counter-reset: source-line 0; }
+    pre.numberSource code > span
+      { position: relative; left: -4em; counter-increment: source-line; }
+    pre.numberSource code > span > a:first-child::before
+      { content: counter(source-line);
+        position: relative; left: -1em; text-align: right; vertical-align: baseline;
+        border: none; display: inline-block;
+        -webkit-touch-callout: none; -webkit-user-select: none;
+        -khtml-user-select: none; -moz-user-select: none;
+        -ms-user-select: none; user-select: none;
+        padding: 0 4px; width: 4em;
+        color: #aaaaaa;
+      }
+    pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+    div.sourceCode
+      {   }
+    @media screen {
+    pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+    }
+    code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+    code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+    code span.at { color: #7d9029; } /* Attribute */
+    code span.bn { color: #40a070; } /* BaseN */
+    code span.bu { } /* BuiltIn */
+    code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+    code span.ch { color: #4070a0; } /* Char */
+    code span.cn { color: #880000; } /* Constant */
+    code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+    code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+    code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+    code span.dt { color: #902000; } /* DataType */
+    code span.dv { color: #40a070; } /* DecVal */
+    code span.er { color: #ff0000; font-weight: bold; } /* Error */
+    code span.ex { } /* Extension */
+    code span.fl { color: #40a070; } /* Float */
+    code span.fu { color: #06287e; } /* Function */
+    code span.im { } /* Import */
+    code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+    code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+    code span.op { color: #666666; } /* Operator */
+    code span.ot { color: #007020; } /* Other */
+    code span.pp { color: #bc7a00; } /* Preprocessor */
+    code span.sc { color: #4070a0; } /* SpecialChar */
+    code span.ss { color: #bb6688; } /* SpecialString */
+    code span.st { color: #4070a0; } /* String */
+    code span.va { color: #19177c; } /* Variable */
+    code span.vs { color: #4070a0; } /* VerbatimString */
+    code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+    div.csl-bib-body { }
+    div.csl-entry {
+      clear: both;
+    }
+    .hanging div.csl-entry {
+      margin-left:2em;
+      text-indent:-2em;
+    }
+    div.csl-left-margin {
+      min-width:2em;
+      float:left;
+    }
+    div.csl-right-inline {
+      margin-left:2em;
+      padding-left:1em;
+    }
+    div.csl-indent {
+      margin-left: 2em;
+    }
+  </style>
+  <style>
+
+  /* le fait de mettre le css à l'interieur de balises <style> permettra d'utiliser la commande pandoc suivante :
+  pandoc -s fichierdépart.md -H fichier.css -o fichier_destination.html
+
+  l'argument -H encapsule tout le css dans le body du document html créé */
+
+
+
+  /* dimensionnement de la page à la taille de l'écran
+  couleur de fond */
+
+  html, body{
+
+  background-color: #11191f;
+  width:100%;
+  height: 100%;
+  margin:0 auto;
+  color: #ffffff;
+  }
+
+  /* couleur, taille et alignement du titre 1 = titre du document en markdown */
+
+  h1{
+
+    text-align:center;
+    font-size: 2rem;
+    color: #edf0f3;
+  }
+
+  /* couleur, taille et alignement du titre 2 */
+
+  h2 {
+    font-size: 1.75rem;
+    text-align:center;
+    color: #599fa6;
+  }
+
+  /* espace de la citation */
+
+  blockquote.style {
+    font: 14px/20px italic Times, serif;
+    padding: 8px;
+    background-color: #141e26;
+    color: #a65980;
+    border-top: 1px solid #e1cc89;
+    border-bottom: 1px solid #e1cc89;
+    margin: 5px;
+    background-position: top left;
+    background-repeat: no-repeat;
+    text-indent: 23px;
+    }
+
+  /* liste à puces, puces carrées */
+
+  ul{
+     list-style: square;;
+  }
+
+  </style>
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
+</head>
+<body>
+<header id="title-block-header">
+<h1 class="title">Markdown comme syntaxe universelle</h1>
+<p class="subtitle">atelier Stretching numérique</p>
+<p class="author">Damien Belvèze</p>
+<p class="date">10/03/2022</p>
+</header>
+<p><img src="images/visuel.png" /></p>
+<h2 id="avantages-du-markdown">avantages du markdown</h2>
+<p>syntaxe très simple à apprendre permettant d’éditer dans une grande
+variété de formats (wiki, odt, doc, pdf, html, LaTeX, ce qu’on appelle
+la versatilité.</p>
+<p>Depuis 1984, ceux qui écrivent de la poésie et ceux qui écrivent du
+code, à quelques exceptions près, n’écrivent plus sur le même support
+numérique. (le traitement de texte Wordstar vendu avec la
+microinformatique de l’époque permettait auparavant d’écrire les deux
+avec le même logiciel)</p>
+<p>essor du traitement de texte qui ne permet plus d’écrire du code /
+maintien parallèle des éditeurs de texte pour les langages informatiques
+(<span class="citation"
+data-cites="DehutfiniravecWord2018"><sup>1</sup></span>)</p>
+<blockquote>
+<p>Nous avons donc perdu progressivement la capacité d’écrire dans un
+langage interprétable par la machine</p>
+</blockquote>
+<p>Un traitement de texte est fait pour vous faciliter certaines mises
+en page en prenant en charge (et invisibilisant les opérations
+sous-jacentes), cela vous fait gagner du temps jusqu’à un certain
+point</p>
+<p>le fait de recourir à ces traitements de texte opaques (parce que
+propriétaires et parce que ne permettant pas d’accéder à la liste des
+opérations) constitue un danger pour écrire la science (risque d’erreur
+et manque de transparence du logiciel)</p>
+<p>LaTeX : découplage du texte et de sa mise en forme. Permet une
+finesse d’édition plus importante que les traitements de texte. convient
+aux chercheurs en informatique pour qui l’édition est une affaire de
+programmation.</p>
+<p>Aaron Swartz et John Gruber ont inventé le markdown plus simple à
+utiliser que la LaTeX (courbe d’apprentissage beaucoup moins
+grande)(<span class="citation"
+data-cites="DehutfiniravecWord2018"><sup>1</sup></span>)</p>
+<blockquote>
+<p>Le HTML comprend un grand nombre de balises. La mise en page du texte
+peut être également enrichie au moyen du CSS. La force du Markdown
+résulte dans l’utilisation de balises peu nombreuses, simples à mettre
+en place et à mémoriser. Il devient aisé de réaliser un document dont on
+maîtrise la mise en page sur le Web, sans pour autant devoir apprendre
+le HTML. Plus encore, en conjonction de Pandoc qui est un moteur de
+conversion, il devient possible de produire aussi bien du HTML, que des
+pdf, des docx, des epub, et même des présentations de type PowerPoint.
+On ne produit alors ses données qu’une seule fois et on les exporte
+mises en forme automatiquement pour plusieurs supports.</p>
+</blockquote>
+<p>Au lieu d’apprendre à utiliser des interfaces qui changent
+régulièrement avec les changements de version et n’engendrent qu’un
+savoir restreint à l’éditeur de texte, apprenons plutôt le langage
+homme-machine pour compiler du texte avec des instructions de mise en
+forme. L’une des raisons pour lesquelles écrire en markdown sur Obsidian
+peut être aussi une bonne introduction au code (de même que pour Twine
+fournit une introduction au langage Haskell)</p>
+<p>voir également la frustration d’universitaires qui considèrent que
+les traitements de texte restent trop attachés à l’impression comme
+finalité (<span class="citation"
+data-cites="Vitali-RosatichercheursSHSsaventils2018"><sup>2</sup></span>)</p>
+<h2 id="petite-démonstration">petite démonstration</h2>
+<h3 id="conversions-de-base">conversions de base</h3>
+<p>Les fichiers qui seront utilisés au cours de l’atelier sont
+téléchargeables sur <a
+href="https://github.com/damienbelveze/stretchnum">github</a></p>
+<p><strong>instructions pour le formateur ou la formatrice
+:</strong></p>
+<ul>
+<li>cloner le dossier sur le bureau de son ordi</li>
+<li>ouvrir le fichier kanagawa.md</li>
+<li>montrer la structure, à quoi correspond le markdown (éléments de
+syntaxe : headers, italique, titre, préambule, caractères gras
+italiques)</li>
+</ul>
+<h3 id="conversion-en-pdf">conversion en PDF</h3>
+<p><strong>Instructions pour le formateur ou la formatrice
+:</strong></p>
+<ul>
+<li>montrer la versalité du markdown, faire d’abord une conversion en
+PDF avec Pandoc</li>
+</ul>
+<pre class="shell"><code>pandoc kanagawa.md -o kanagawa.pdf</code></pre>
+<p>Note1 : pour la conversion en PDF, on a besoin d’une version de LaTeX
+sur son ordinateur. Pandoc est installable sans besoin d’avoir les
+droits sur sa machine, en revanche pour installer une version de LateX
+(même légère TinyTeX, on doit avoir les droits sur sa machine)</p>
+<p>Note 2 : si beaucoup de conversions sont réversibles (de MD à ODT, de
+ODT à MD, de MD à DOC, de DOC à MD), ce n’est pas le cas de toutes : on
+ne peut pas convertir un fichier PDF en MD à moins d’utiliser des
+logiciels propriétaires comme ceux d’Adobe. Par ailleurs toutes les
+conversions ne sont pas réversibles au même niveau. LaTeX et HTML étant
+potentiellement plus riches que Markdown, des éléments de mise en forme
+peuvent se perdre en route. Les champs dans Word ou Writer dont les
+styles peuvent être modifiés ne sont pas toujours aisément appariables à
+la syntaxe Markdown.</p>
+<p>Pour convertir un texte en markdown qui comporte des références
+bibliographiques en PDF, il faut ajouter à la commande pandoc :</p>
+<ul>
+<li>le filtre à utiliser pour parser les citations en bibtex
+(Citeproc)</li>
+<li>le chemin vers le fichier qui contient les références
+bibliographiques (en bibtex)</li>
+<li>le chemin vers le fichier qui contient le style bibliographique (en
+csl)</li>
+<li>l’outil à utiliser pour faire la conversion LaTeX vers PDF (xelatex,
+package de TeXLive)</li>
+</ul>
+<p>cela donne :</p>
+<pre class="shell"><code>
+pandoc markdown.md --bibliography=biblio/bibliographie.bib --csl=biblio/nature.csl --citeproc --pdf-engine=xelatex -o markdown.pdf
+</code></pre>
+<h3 id="conversion-en-open-document-avec-un-modèle">conversion en open
+document avec un modèle</h3>
+<p><a href="mypdf/lettre.odt">template</a></p>
+<p>un modèle se constitue en travaillant les styles sur le traitement de
+texte (définir qu’un titre aura telle forme, telle police, un titre 2,
+telle taille, telle police, une image sera alignée, ancrée au texte,
+etc. ) Quand le modèle est fait, la conversion est simple :</p>
+<pre class="shell"><code>pandoc -s kanagawa.md --reference-doc lettre.odt -o kanagawa.odt</code></pre>
+<h3 id="conversion-simple-en-html">conversion simple en html</h3>
+<p>Conversion simple avec HTML</p>
+<pre class="shell"><code>pandoc -s kanagawa.md -o kanagawa.html</code></pre>
+<p>l’argument -s(tandalone) permet de compiler le visuel et le document
+en html</p>
+<h3 id="conversion-en-html-avec-feuille-de-style">conversion en HTML
+avec feuille de style</h3>
+<p>On va appliquer la feuille de style CSS suivante (essai.css dans un
+dossier css) au document en markdown pour faire une page web avec la
+forme souhaitée :</p>
+<div class="sourceCode" id="cb5"><pre
+class="sourceCode html"><code class="sourceCode html"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="kw">&lt;style&gt;</span></span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a><span class="co">/* le fait de mettre le css à l&#39;interieur de balises &lt;style&gt; permettra</span></span>
+<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a><span class="co">d&#39;utiliser la commande pandoc suivante :</span></span>
+<span id="cb5-6"><a href="#cb5-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-7"><a href="#cb5-7" aria-hidden="true" tabindex="-1"></a><span class="co">pandoc -s fichierdépart.md -H fichier.css -o fichier_destination.html</span></span>
+<span id="cb5-8"><a href="#cb5-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-9"><a href="#cb5-9" aria-hidden="true" tabindex="-1"></a><span class="co">l&#39;argument -H encapsule tout le css dans le header du document créé, avant le  </span></span>
+<span id="cb5-10"><a href="#cb5-10" aria-hidden="true" tabindex="-1"></a><span class="co">body, ce qui fait que le Css qui s&#39;y trouve va être utilisé pour présenter</span></span>
+<span id="cb5-11"><a href="#cb5-11" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-12"><a href="#cb5-12" aria-hidden="true" tabindex="-1"></a><span class="co">l&#39;ensemble du document */</span></span>
+<span id="cb5-13"><a href="#cb5-13" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-14"><a href="#cb5-14" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-15"><a href="#cb5-15" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-16"><a href="#cb5-16" aria-hidden="true" tabindex="-1"></a><span class="co">/* dimensionnement de la page à la taille de l&#39;écran</span></span>
+<span id="cb5-17"><a href="#cb5-17" aria-hidden="true" tabindex="-1"></a><span class="co">couleur de fond */</span></span>
+<span id="cb5-18"><a href="#cb5-18" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-19"><a href="#cb5-19" aria-hidden="true" tabindex="-1"></a>html<span class="op">,</span> body{</span>
+<span id="cb5-20"><a href="#cb5-20" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-21"><a href="#cb5-21" aria-hidden="true" tabindex="-1"></a><span class="kw">background-color</span>: <span class="cn">#11191f</span><span class="op">;</span></span>
+<span id="cb5-22"><a href="#cb5-22" aria-hidden="true" tabindex="-1"></a><span class="kw">width</span>:<span class="dv">100</span><span class="dt">%</span><span class="op">;</span></span>
+<span id="cb5-23"><a href="#cb5-23" aria-hidden="true" tabindex="-1"></a><span class="kw">height</span>: <span class="dv">100</span><span class="dt">%</span><span class="op">;</span></span>
+<span id="cb5-24"><a href="#cb5-24" aria-hidden="true" tabindex="-1"></a><span class="kw">margin</span>:<span class="dv">0</span> <span class="bu">auto</span><span class="op">;</span></span>
+<span id="cb5-25"><a href="#cb5-25" aria-hidden="true" tabindex="-1"></a><span class="kw">color</span>: <span class="cn">#ffffff</span><span class="op">;</span></span>
+<span id="cb5-26"><a href="#cb5-26" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb5-27"><a href="#cb5-27" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-28"><a href="#cb5-28" aria-hidden="true" tabindex="-1"></a><span class="co">/* couleur, taille et alignement du titre 1 = titre du document en markdown */</span></span>
+<span id="cb5-29"><a href="#cb5-29" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-30"><a href="#cb5-30" aria-hidden="true" tabindex="-1"></a>h1{</span>
+<span id="cb5-31"><a href="#cb5-31" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-32"><a href="#cb5-32" aria-hidden="true" tabindex="-1"></a>  <span class="kw">text-align</span>:<span class="dv">center</span><span class="op">;</span></span>
+<span id="cb5-33"><a href="#cb5-33" aria-hidden="true" tabindex="-1"></a>  <span class="kw">font-size</span>: <span class="dv">2</span><span class="dt">rem</span><span class="op">;</span></span>
+<span id="cb5-34"><a href="#cb5-34" aria-hidden="true" tabindex="-1"></a>  <span class="kw">color</span>: <span class="cn">#edf0f3</span><span class="op">;</span></span>
+<span id="cb5-35"><a href="#cb5-35" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb5-36"><a href="#cb5-36" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-37"><a href="#cb5-37" aria-hidden="true" tabindex="-1"></a><span class="co">/* couleur, taille et alignement du titre 2 */</span></span>
+<span id="cb5-38"><a href="#cb5-38" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-39"><a href="#cb5-39" aria-hidden="true" tabindex="-1"></a>h2 {</span>
+<span id="cb5-40"><a href="#cb5-40" aria-hidden="true" tabindex="-1"></a>  <span class="kw">font-size</span>: <span class="dv">1.75</span><span class="dt">rem</span><span class="op">;</span></span>
+<span id="cb5-41"><a href="#cb5-41" aria-hidden="true" tabindex="-1"></a>  <span class="kw">text-align</span>:<span class="dv">center</span><span class="op">;</span></span>
+<span id="cb5-42"><a href="#cb5-42" aria-hidden="true" tabindex="-1"></a>  <span class="kw">color</span>: <span class="cn">#599fa6</span><span class="op">;</span></span>
+<span id="cb5-43"><a href="#cb5-43" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb5-44"><a href="#cb5-44" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-45"><a href="#cb5-45" aria-hidden="true" tabindex="-1"></a><span class="co">/* espace de la citation */</span></span>
+<span id="cb5-46"><a href="#cb5-46" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-47"><a href="#cb5-47" aria-hidden="true" tabindex="-1"></a>blockquote<span class="fu">.style</span> {</span>
+<span id="cb5-48"><a href="#cb5-48" aria-hidden="true" tabindex="-1"></a>  <span class="kw">font</span>: <span class="dv">14</span><span class="dt">px</span>/<span class="dv">20</span><span class="dt">px</span> <span class="dv">italic</span> Times<span class="op">,</span> <span class="dv">serif</span><span class="op">;</span></span>
+<span id="cb5-49"><a href="#cb5-49" aria-hidden="true" tabindex="-1"></a>  <span class="kw">padding</span>: <span class="dv">8</span><span class="dt">px</span><span class="op">;</span></span>
+<span id="cb5-50"><a href="#cb5-50" aria-hidden="true" tabindex="-1"></a>  <span class="kw">background-color</span>: <span class="cn">#141e26</span><span class="op">;</span></span>
+<span id="cb5-51"><a href="#cb5-51" aria-hidden="true" tabindex="-1"></a>  <span class="kw">color</span>: <span class="cn">#a65980</span><span class="op">;</span></span>
+<span id="cb5-52"><a href="#cb5-52" aria-hidden="true" tabindex="-1"></a>  <span class="kw">border-top</span>: <span class="dv">1</span><span class="dt">px</span> <span class="dv">solid</span> <span class="cn">#e1cc89</span><span class="op">;</span></span>
+<span id="cb5-53"><a href="#cb5-53" aria-hidden="true" tabindex="-1"></a>  <span class="kw">border-bottom</span>: <span class="dv">1</span><span class="dt">px</span> <span class="dv">solid</span> <span class="cn">#e1cc89</span><span class="op">;</span></span>
+<span id="cb5-54"><a href="#cb5-54" aria-hidden="true" tabindex="-1"></a>  <span class="kw">margin</span>: <span class="dv">5</span><span class="dt">px</span><span class="op">;</span></span>
+<span id="cb5-55"><a href="#cb5-55" aria-hidden="true" tabindex="-1"></a>  <span class="kw">background-position</span>: <span class="dv">top</span> <span class="dv">left</span><span class="op">;</span></span>
+<span id="cb5-56"><a href="#cb5-56" aria-hidden="true" tabindex="-1"></a>  <span class="kw">background-repeat</span>: <span class="dv">no-repeat</span><span class="op">;</span></span>
+<span id="cb5-57"><a href="#cb5-57" aria-hidden="true" tabindex="-1"></a>  <span class="kw">text-indent</span>: <span class="dv">23</span><span class="dt">px</span><span class="op">;</span></span>
+<span id="cb5-58"><a href="#cb5-58" aria-hidden="true" tabindex="-1"></a>  }</span>
+<span id="cb5-59"><a href="#cb5-59" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-60"><a href="#cb5-60" aria-hidden="true" tabindex="-1"></a><span class="co">/* liste à puces, puces carrées */</span></span>
+<span id="cb5-61"><a href="#cb5-61" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-62"><a href="#cb5-62" aria-hidden="true" tabindex="-1"></a>ul{</span>
+<span id="cb5-63"><a href="#cb5-63" aria-hidden="true" tabindex="-1"></a>   <span class="kw">list-style</span>: <span class="dv">square</span><span class="op">;</span></span>
+<span id="cb5-64"><a href="#cb5-64" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb5-65"><a href="#cb5-65" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-66"><a href="#cb5-66" aria-hidden="true" tabindex="-1"></a><span class="kw">&lt;/style&gt;</span></span></code></pre></div>
+<p>Le script de conversion s’écrit de la manière suivante :</p>
+<pre class="shell"><code>pandoc -s kanagawa.md -H css/essai.css -o kanagawa.html</code></pre>
+<h2
+id="créer-son-premier-document-en-markdown-avec-léditeur-en-ligne-stylo">créer
+son premier document en markdown avec l’éditeur en ligne Stylo</h2>
+<h3 id="éditeurs-en-markdown">éditeurs en markdown</h3>
+<p>On peut écrire en markdown avec des éditeurs de toutes sortes :
+emacs, Atom, R (on utilise alors une version de markdown qui s’appelle
+Rmarkdown). Le bloc-note de Windows suffit même si pouvoir bénéficier de
+la coloration syntaxique d’un éditeur de texte un peu plus élaboré est
+une aide appréciable.</p>
+<p>L’éditeur va interpréter comme du texte en markdown tous les fichiers
+qui ont l’extension .md</p>
+<p>Si dans un premier temps on ne souhaite pas télécharger d’éditeur de
+texte supplémentaire, ni pandoc, ni LaTeX et qu’on veut pouvoir utiliser
+ces logiciels en ligne, un éditeur en ligne a été conçu pour les
+chercheurs en SHS. Il s’agit de <a
+href="https://stylo.huma-num.fr/">Stylo</a></p>
+<p>Pour utiliser Stylo, il faut se créer un compte sur Huma-Num
+(infrastructure de recherche française dédiée aux humanités numériques).
+Ce compte vous permettra d’ailleurs d’avoir accès à d’autres services de
+cette infrastructure. On peut aussi se connecter avec son compte
+Twitter, ORCID ou HAL</p>
+<h3 id="editer-avec-stylo">Editer avec Stylo</h3>
+<p><img src="images/stylo1.png" /></p>
+<p>créer un nouveau document Pour ouvrir la console d’édition, cliquer
+sur “open” (en grisé en haut à gauche), quand elle gêne, la refermer
+(“close”)</p>
+<p>Mettre en forme le texte suivant en se basant sur la structure du
+document : https://damienbelveze.github.io/stretchnum/kanagawa.html</p>
+<pre class="text"><code>[titre] la vague de Hokusai
+[date] 2022-03-14
+[sous-titre] atelier Markdown comme syntaxe universelle
+
+
+[Titre 2] La grande vague de Kanagawa
+
+[Citation] &quot;les vagues
+lentement déferlent vers le rivage
+une lune à peine visible&quot;
+
+Le peintre Hokusai a peint cette estampe en 1830 ou 1831 pendant la
+Période [Edo : mettre en italiques] Cette oeuvre est la plus connue du peintre. La couleur qui
+y domine est le bleu de Prusse
+
+Mettre ici une image de votre choix en suivant la syntaxe :
+
+![légende de l&#39;image](chemin vers le fichier de l&#39;image)
+
+[Titre 2] signification de cette estampe
+
+Il s&#39;agit d&#39;une [scène réaliste : mettre en gras] mais avec un [aspect dramatique : mettre en gras].
+La signification de l&#39;image varie d&#39;ailleurs selon qu&#39;on est occidental
+(sans de lecture : gauche à droite) ou japonais (sens de lecture
+vertical puis de droite à gauche)
+
+Pour un occidental, les barques se dirigent vers la droite et tentent de
+fuir la vague Pour un japonais, les barques dont les rameurs rament à
+contre-courant se précipitent vers le creux de la vague.
+
+[Titre 2] Préfecture de Kanagawa (principales villes)
+
+[liste à puces]
+- Atsugi
+- Ayase
+- Chigasaki
+- Ebina
+- Fujisawa</code></pre>
+<p>Quand le texte a été mis en forme, faire un export en HTML5 et un
+export en PDF</p>
+<h2 class="unnumbered" id="bibliographie">Bibliographie</h2>
+<div id="refs" class="references csl-bib-body" data-line-spacing="2"
+role="doc-bibliography">
+<div id="ref-DehutfiniravecWord2018" class="csl-entry"
+role="doc-biblioentry">
+<div class="csl-left-margin">1. </div><div
+class="csl-right-inline">Dehut, J. <span>En finir avec Word ! Pour une
+analyse des enjeux relatifs aux traitements de texte et à leur
+utilisation</span>. <em>L’Atelier des Savoirs</em> (2018).</div>
+</div>
+<div id="ref-Vitali-RosatichercheursSHSsaventils2018" class="csl-entry"
+role="doc-biblioentry">
+<div class="csl-left-margin">2. </div><div
+class="csl-right-inline">Vitali-Rosati, M. Les chercheurs en
+<span>SHS</span> savent-ils écrire ? <em>The Conversation</em>
+(2018).</div>
+</div>
+</div>
+</body>
+</html>

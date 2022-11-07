@@ -20,6 +20,15 @@ code {
   border-radius:8px;
   font-size:0.9em;
 }
+.demi {
+  font-size:0.5em;
+} 
+.do {
+  color:DarkOrange;
+}
+.zerosept {
+  font-size:0.7em;
+}
 
 </style>
 
@@ -55,13 +64,13 @@ v.2021.09 {style=font-size:0.5em;color:coral;background-color:;border-radius:15p
 
 ##### +++ Liens envoyés avant la présentation +++ {style=color:DeepPink}
 
-- Sarah Simpkin : [*Getting Started with Markdown*](https://doi.org/10.46430/phen0046) - The Programming Historian, novembre 2015, mise à jour mai 2020. {style=font-size:0.5em;}
+- Sarah Simpkin : [*Getting Started with Markdown*](https://doi.org/10.46430/phen0046) - The Programming Historian, novembre 2015, mise à jour mai 2020. {.demi}
   - en français : [*Débuter avec Markdown*](https://programminghistorian.org/fr/lecons/debuter-avec-markdown).
   - en castillan : [*Introducción a Markdown*](https://programminghistorian.org/es/lecciones/introduccion-a-markdown).
 
-- Émilien Ruiz : [*Apprendre à écrire ?*](http://www.boiteaoutils.info/2020/04/apprendre-ecrire/) -  La boîte à outils des historien·ne·s, avril 2020. {style=font-size:0.5em;}
-- Éliane Caillou : [*"Stylo" : l'éditeur de texte SHS d'Huma-Num*](https://cometdoc.hypotheses.org/1147) - com&doc, novembre 2020. {style=font-size:0.5em;}
-- Sur [Le blog d'Arthur Perret](https://www.arthurperret.fr/) (*doctorant en SIC à Bordeaux*) : {style=font-size:0.5em;}
+- Émilien Ruiz : [*Apprendre à écrire ?*](http://www.boiteaoutils.info/2020/04/apprendre-ecrire/) -  La boîte à outils des historien·ne·s, avril 2020. {.demi}
+- Éliane Caillou : [*"Stylo" : l'éditeur de texte SHS d'Huma-Num*](https://cometdoc.hypotheses.org/1147) - com&doc, novembre 2020. {.demi}
+- Sur [Le blog d'Arthur Perret](https://www.arthurperret.fr/) (*doctorant en SIC à Bordeaux*) : {.demi}
   - [L’écriture académique au format texte](https://www.arthurperret.fr/2021-09-21-ecriture-academique-format-texte.html), septembre 2021 (*Notes de la formation (2h) qu’il a animé à l’URFIST de Bordeaux le 21 septembre 2021*). 
   - [*Écrire et éditer*](https://www.arthurperret.fr/ecrire-et-editer.html), mai 2020.
   - [*Enseignement et automatisation avec Pandoc*](https://www.arthurperret.fr/enseignement-automatisation-pandoc.html), novembre 2020.
@@ -72,22 +81,22 @@ v.2021.09 {style=font-size:0.5em;color:coral;background-color:;border-radius:15p
 
 ##### +++ Autres liens +++ {style=color:DeepPink}
 
-- Tennen D. & Wythoff G. : [*Sustainable Authorship in Plain Text using Pandoc and Markdown*](https://programminghistorian.org/en/lessons/sustainable-authorship-in-plain-text-using-pandoc-and-markdown) - The Programming Historian, mars 2014, mise à jour juillet 2020. {style=font-size:0.5em;}
+- Tennen D. & Wythoff G. : [*Sustainable Authorship in Plain Text using Pandoc and Markdown*](https://programminghistorian.org/en/lessons/sustainable-authorship-in-plain-text-using-pandoc-and-markdown) - The Programming Historian, mars 2014, mise à jour juillet 2020. {.demi}
   - en français : [*Rédaction durable avec Pandoc et Markdown*](https://programminghistorian.org/fr/lecons/redaction-durable-avec-pandoc-et-markdown)
   - en castillan : [*Escritura sostenible en texto plano usando Pandoc y Markdown*](https://programminghistorian.org/es/lecciones/escritura-sostenible-usando-pandoc-y-markdown)
 
 - [*Les fabriques de publication*](https://www.quaternum.net/2020/04/29/les-fabriques-de-publication/), Série de fiches sur le *Carnet* de [quaternum.net
-](https://www.quaternum.net/), le site d'Antoine Fauchié. {style=font-size:0.5em;}
+](https://www.quaternum.net/), le site d'Antoine Fauchié. {.demi}
   - [*Fabriques de publication :* [2] *Pandoc*](https://www.quaternum.net/2020/04/30/fabriques-de-publication-pandoc/) *(30 avril 2020)*
   - [*Fabriques de publication :* [8] *Stylo*](https://www.quaternum.net/2020/05/21/fabriques-de-publication-stylo/) *(21 mai 2020)*
   - [*Fabriques de publication :* [9] *Zettlr*](https://www.quaternum.net/2020/08/28/fabriques-de-publication-zettlr/) *(28 août 2020)*
   
-- Sur [Le blog de Hendrik Herz](https://www.hendrik-erz.de/blog) (*le doctorant qui développe Zettlr*) {style=font-size:0.5em;}
+- Sur [Le blog de Hendrik Herz](https://www.hendrik-erz.de/blog) (*le doctorant qui développe Zettlr*) {.demi}
   - [*How I work* [IV] : *Reference Management & Reading Literature*](https://www.hendrik-erz.de/blog)
   - [*How I work* [V] : *Zettlr and Academic Markdown*](https://www.hendrik-erz.de/post/how-i-work-part-v-zettlr-and-academic-markdown)
-- [Academic Pandoc template](https://maehr.github.io/academic-pandoc-template/markdown.html) : Pour comprendre certaines options de Pandoc. {style=font-size:0.5em;}
+- [Academic Pandoc template](https://maehr.github.io/academic-pandoc-template/markdown.html) : Pour comprendre certaines options de Pandoc. {.demi}
 
-- [Mentions du format Markdown](http://www.these.robindemourat.com/glossary/69fc8e7f-a5ca-4d78-8367-b92cf8f9a480) dans la thèse (*Esthétique et Arts appliqués*, Rennes, 2020) de Robin de Mourat : *Le Vacillement des formats. Matérialité, écriture et enquête : le design des publications en Sciences Humaines et Sociales*. {style=font-size:0.5em;}
+- [Mentions du format Markdown](http://www.these.robindemourat.com/glossary/69fc8e7f-a5ca-4d78-8367-b92cf8f9a480) dans la thèse (*Esthétique et Arts appliqués*, Rennes, 2020) de Robin de Mourat : *Le Vacillement des formats. Matérialité, écriture et enquête : le design des publications en Sciences Humaines et Sociales*. {.demi}
 
 --
 
@@ -95,13 +104,13 @@ v.2021.09 {style=font-size:0.5em;color:coral;background-color:;border-radius:15p
 
 ### Déroulé {style=color:DeepPink}
 
-- **Généralités**, histoire, définitions [→](#/2) {.fade-left style=color:DarkOrange}
-- *Markdown*, syntaxe et **saveurs** [→](#/3) {.fade-left style=color:DarkOrange}
-- **Prendre des notes** en *Markdown* [→](#/4) {.fade-left style=color:DarkOrange}
-- **Rédiger** en *Markdown* [→](#/5) {.fade-left style=color:DarkOrange}
-- Et ***Zotero*** dans tout ça... [→](#/6) {.fade-left style=color:DarkOrange}
-- La magie ***Pandoc*** [→](#/7) {.fade-left style=color:DarkOrange}
-- Extensions (*diaporama*, *diagrammes*, *mindmap*) [→](#/8) {.fade-left style=color:DarkOrange}
+- **Généralités**, histoire, définitions [→](#/2) {.fade-left .do}
+- *Markdown*, syntaxe et **saveurs** [→](#/3) {.fade-left .do}
+- **Prendre des notes** en *Markdown* [→](#/4) {.fade-left .do}
+- **Rédiger** en *Markdown* [→](#/5) {.fade-left .do}
+- Et ***Zotero*** dans tout ça... [→](#/6) {.fade-left .do}
+- La magie ***Pandoc*** [→](#/7) {.fade-left .do}
+- Extensions (*diaporama*, *diagrammes*, *mindmap*) [→](#/8) {.fade-left .do}
 
 ---
 
@@ -203,14 +212,14 @@ Voir [Manuel Pandoc, Citations](https://pandoc.org/MANUAL.html#citations)* {styl
 
  markdown | html | affichage {style=font-size:0.8em;}
 ---|---|---
-`*italique*` ou `_italique_`|`<em>italique</em>`|*italique* {style=font-size:0.7em;}
-`**gras**`|`<strong>gras<strong>`|**gras** {style=font-size:0.7em;}
-`***gras italique***`|`<strong><em>gras italique</em></strong>`|***gras italique*** {style=font-size:0.7em;}
-`~~barré~~`|`<s>barré</s>`|~~barré~~ {style=font-size:0.7em;}
-`XIX^e^`|`XIX<sup>e</sup>`|XIX<sup>e</sup> {style=font-size:0.7em;}
-`H~2~O`|`H<sub>2</sub>O`|H<sub>2</sub>O {style=font-size:0.7em;}
-`[texte](url)`|`<a href="url">texte</a>`|<a href="url">texte</a> {style=font-size:0.7em;}
-`[texte]{.style}`|`<span class="style">texte</span>`|texte {style=font-size:0.7em;}
+`*italique*` ou `_italique_`|`<em>italique</em>`|*italique* {.zerosept}
+`**gras**`|`<strong>gras<strong>`|**gras** {.zerosept}
+`***gras italique***`|`<strong><em>gras italique</em></strong>`|***gras italique*** {.zerosept}
+`~~barré~~`|`<s>barré</s>`|~~barré~~ {.zerosept}
+`XIX^e^`|`XIX<sup>e</sup>`|XIX<sup>e</sup> {.zerosept}
+`H~2~O`|`H<sub>2</sub>O`|H<sub>2</sub>O {.zerosept}
+`[texte](url)`|`<a href="url">texte</a>`|<a href="url">texte</a> {.zerosept}
+`[texte]{.style}`|`<span class="style">texte</span>`|texte {.zerosept}
 ||
 --
 
@@ -434,8 +443,8 @@ thème :
 #### Liste d'éditeurs `Markdown` En ligne {style=color:DeepPink;text-align:left;}
 
 - [\_Stylo_](https://stylo.huma-num.fr/)
-  - (Pour l'écriture d'articles scientifiques, hébergé chez [Huma-Num](https://stylo.huma-num.fr/)) {style=font-size:0.6em}
-  - M. Vitali-Rosati, « [Stylo : un éditeur de texte pour les sciences humaines et sociales](http://blog.sens-public.org/marcellovitalirosati/stylo/) », *Culture numérique*, 2018. {style=font-size:0.6em}
+  - (Pour l'écriture d'articles scientifiques, hébergé chez [Huma-Num](https://stylo.huma-num.fr/)) {.demi}
+  - M. Vitali-Rosati, « [Stylo : un éditeur de texte pour les sciences humaines et sociales](http://blog.sens-public.org/marcellovitalirosati/stylo/) », *Culture numérique*, 2018. {.demi}
 - [Dillinger](https://dillinger.io/)
 - [HackMD](https://hackmd.io/pricing) (*Collaboratif, inscription*) 
 - [HedgeDoc](https://hedgedoc.org) (*Collaboratif, à installer sur un serveur*)
@@ -445,7 +454,7 @@ thème :
 
 #### éditeurs généralistes {style=color:DeepPink;text-align:left;margin-left:2em;}
 
-- <span style="color:deeppink">**VS Code**</span> avec quelques extensions : {style=font-size:0.6em}
+- <span style="color:deeppink">**VS Code**</span> avec quelques extensions : {.demi}
   - Markdown Extension Pack : {.fragment .fade-left}
     - Markdown All in One
     - Markdown PDF
@@ -518,11 +527,10 @@ thème :
 
 #### Extensions Zotero : [Mdnotes for Zotero](https://github.com/argenos/zotero-mdnotes) {style=color:DeepPink;text-align:left;}
   
-
-
-Exporte en markdown (*vers un dossier, pour Obsidian ou Zettlr*) {style=font-size:0.6em;}
-- les métadonnées de la référence {style=font-size:0.6em;}
-- vos notes (qui peuvent avoir été extraites des pdf par [ZotFile](http://zotfile.com)) {style=font-size:0.6em;}
+Exporte en markdown (*vers un dossier, pour Obsidian, Zettlr ou autres*) {.demi}
+- les **métadonnées** de la référence. {.demi}
+- vos **notes** (qui peuvent avoir été extraites des pdf par [ZotFile](http://zotfile.com)). {.demi}
+- Le [**tutoriel**](https://argentinaos.com/zotero-mdnotes/) officiel. {.demi}
 
 <hr style="border:none;border-top:3px dashed pink;width:95%;" />
 

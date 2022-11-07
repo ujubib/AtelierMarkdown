@@ -1,0 +1,190 @@
+[titre] la vague de Hokusai
+[date] 2022-03-14
+[sous-titre] atelier Markdown comme syntaxe universelle
+
+
+[Titre 2] La grande vague de Kanagawa
+
+[Citation] "les vagues
+lentement déferlent vers le rivage
+une lune à peine visible"
+
+Le peintre Hokusai a peint cette estampe en 1830 ou 1831 pendant la
+Période [Edo : mettre en italiques] Cette oeuvre est la plus connue du peintre. La couleur qui
+y domine est le bleu de Prusse
+
+Mettre ici une image de votre choix en suivant la syntaxe : 
+
+![légende de l'image](chemin vers le fichier de l'image)
+
+[Titre 2] signification de cette estampe
+
+Il s'agit d'une [scène réaliste : mettre en gras] mais avec un [aspect dramatique : mettre en gras].
+La signification de l'image varie d'ailleurs selon qu'on est occidental
+(sans de lecture : gauche à droite) ou japonais (sens de lecture
+vertical puis de droite à gauche)
+
+Pour un occidental, les barques se dirigent vers la droite et tentent de
+fuir la vague Pour un japonais, les barques dont les rameurs rament à
+contre-courant se précipitent vers le creux de la vague.
+
+[Titre 2] Préfecture de Kanagawa (principales villes)
+
+[liste à puces]
+- Atsugi
+- Ayase
+- Chigasaki
+- Ebina
+- Fujisawa
+
+[titre] la vague de Hokusai
+[date] 2022-03-14
+[sous-titre] atelier Markdown comme syntaxe universelle
+
+
+[Titre 2] La grande vague de Kanagawa
+
+[Citation] "les vagues
+lentement déferlent vers le rivage
+une lune à peine visible"
+
+Le peintre Hokusai a peint cette estampe en 1830 ou 1831 pendant la
+Période [Edo : mettre en italiques] Cette oeuvre est la plus connue du peintre. La couleur qui
+y domine est le bleu de Prusse
+
+Mettre ici une image de votre choix en suivant la syntaxe : 
+
+![légende de l'image](chemin vers le fichier de l'image)
+
+[Titre 2] signification de cette estampe
+
+Il s'agit d'une [scène réaliste : mettre en gras] mais avec un [aspect dramatique : mettre en gras].
+La signification de l'image varie d'ailleurs selon qu'on est occidental
+(sans de lecture : gauche à droite) ou japonais (sens de lecture
+vertical puis de droite à gauche)
+
+Pour un occidental, les barques se dirigent vers la droite et tentent de
+fuir la vague Pour un japonais, les barques dont les rameurs rament à
+contre-courant se précipitent vers le creux de la vague.
+
+[Titre 2] Préfecture de Kanagawa (principales villes)
+
+[liste à puces]
+- Atsugi
+- Ayase
+- Chigasaki
+- Ebina
+- Fujisawa[titre] la vague de Hokusai
+[date] 2022-03-14
+[sous-titre] atelier Markdown comme syntaxe universelle
+
+
+[Titre 2] La grande vague de Kanagawa
+
+[Citation] "les vagues
+lentement déferlent vers le rivage
+une lune à peine visible"
+
+Le peintre Hokusai a peint cette estampe en 1830 ou 1831 pendant la
+Période [Edo : mettre en italiques] Cette oeuvre est la plus connue du peintre. La couleur qui
+y domine est le bleu de Prusse
+
+Mettre ici une image de votre choix en suivant la syntaxe : 
+
+![légende de l'image](chemin vers le fichier de l'image)
+
+[Titre 2] signification de cette estampe
+
+Il s'agit d'une [scène réaliste : mettre en gras] mais avec un [aspect dramatique : mettre en gras].
+La signification de l'image varie d'ailleurs selon qu'on est occidental
+(sans de lecture : gauche à droite) ou japonais (sens de lecture
+vertical puis de droite à gauche)
+
+Pour un occidental, les barques se dirigent vers la droite et tentent de
+fuir la vague Pour un japonais, les barques dont les rameurs rament à
+contre-courant se précipitent vers le creux de la vague.
+
+[Titre 2] Préfecture de Kanagawa (principales villes)
+
+[liste à puces]
+- Atsugi
+- Ayase
+- Chigasaki
+- Ebina
+- Fujisawa
+[titre] la vague de Hokusai
+[date] 2022-03-14
+[sous-titre] atelier Markdown comme syntaxe universelle
+
+
+[Titre 2] La grande vague de Kanagawa
+
+[Citation] "les vagues
+lentement déferlent vers le rivage
+une lune à peine visible"
+
+Le peintre Hokusai a peint cette estampe en 1830 ou 1831 pendant la
+Période [Edo : mettre en italiques] Cette oeuvre est la plus connue du peintre. La couleur qui
+y domine est le bleu de Prusse
+
+Mettre ici une image de votre choix en suivant la syntaxe : 
+
+![légende de l'image](chemin vers le fichier de l'image)
+
+[Titre 2] signification de cette estampe
+
+Il s'agit d'une [scène réaliste : mettre en gras] mais avec un [aspect dramatique : mettre en gras].
+La signification de l'image varie d'ailleurs selon qu'on est occidental
+(sans de lecture : gauche à droite) ou japonais (sens de lecture
+vertical puis de droite à gauche)
+
+Pour un occidental, les barques se dirigent vers la droite et tentent de
+fuir la vague Pour un japonais, les barques dont les rameurs rament à
+contre-courant se précipitent vers le creux de la vague.
+
+[Titre 2] Préfecture de Kanagawa (principales villes)
+
+[liste à puces]
+- Atsugi
+- Ayase
+- Chigasaki
+- Ebina
+- Fujisawa
+[titre] la vague de Hokusai
+[date] 2022-03-14
+[sous-titre] atelier Markdown comme syntaxe universelle
+
+
+[Titre 2] La grande vague de Kanagawa
+
+[Citation] "les vagues
+lentement déferlent vers le rivage
+une lune à peine visible"
+
+Le peintre Hokusai a peint cette estampe en 1830 ou 1831 pendant la
+Période [Edo : mettre en italiques] Cette oeuvre est la plus connue du peintre. La couleur qui
+y domine est le bleu de Prusse
+
+Mettre ici une image de votre choix en suivant la syntaxe : 
+
+![légende de l'image](chemin vers le fichier de l'image)
+
+[Titre 2] signification de cette estampe
+
+Il s'agit d'une [scène réaliste : mettre en gras] mais avec un [aspect dramatique : mettre en gras].
+La signification de l'image varie d'ailleurs selon qu'on est occidental
+(sans de lecture : gauche à droite) ou japonais (sens de lecture
+vertical puis de droite à gauche)
+
+Pour un occidental, les barques se dirigent vers la droite et tentent de
+fuir la vague Pour un japonais, les barques dont les rameurs rament à
+contre-courant se précipitent vers le creux de la vague.
+
+[Titre 2] Préfecture de Kanagawa (principales villes)
+
+[liste à puces]
+- Atsugi
+- Ayase
+- Chigasaki
+- Ebina
+- Fujisawa
