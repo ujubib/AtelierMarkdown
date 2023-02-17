@@ -1,0 +1,104 @@
+/* TITLE
+
+JR - Liens autour d'Obsidian (Markdown, Zotero, Pandoc...)
+*/
+
+/* html à ajouter entre <body> et <svg id="mindmap">
+
+<link rel="stylesheet" href="overlay.css">
+<a class="showmd" href="MindMapObsidian.md">afficher le <em>markdown</em> source</a>
+<div class="preview-info">Afficher l'aperçu</div>
+<div class="overlay">
+    <iframe src=""></iframe>
+    <button class="close">Fermer l'aperçu</button>
+    <a class="goto" target="_blank">ouvrir le lien dans un nouvel onglet</a>
+</div>
+*/
+
+/* html à ajouter avant </body>
+
+<script src="overlay.js"></script>
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital@0;1&display=swap');
+
+#mindmap {
+    display:block;
+    font-family: 'Lato', sans-serif;
+    font-size: 0.98em;
+}
+.markmap-foreign a {
+    color:CornflowerBlue;
+}
+em {
+    color: LightCoral;
+}
+strong {
+    color: MediumSeaGreen;
+}
+body {
+    background-color: SeaShell;
+    color: Navy;
+}
+.preview-info {
+    position: absolute;
+    display: none;
+    color: LemonChiffon;
+    background-color: CornflowerBlue;
+    padding: 0.4em;
+    font-family: monospace;
+    font-size: 0.8em;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+.overlay {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 2;
+}
+.overlay iframe {
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
+    background-color: bisque;
+}
+.overlay .close {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    background-color: brown;
+    color: lightyellow;
+    border:none;
+    border-radius: 8px;
+    font-family: monospace;
+    padding: 0.4em;
+}
+.goto {
+    position: absolute;
+    right: 160px;
+    top: 10px;
+    border:none;
+    border-radius: 8px;
+    font-family: monospace;
+    font-weight: 600;
+    padding: 0.4em;
+    text-decoration: underline;
+    color: brown;
+    font-size: 1.2;
+}
+.showmd {
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    font-family: monospace;
+    text-decoration: underline;
+    color: brown;
+    font-size: 1.2;
+}

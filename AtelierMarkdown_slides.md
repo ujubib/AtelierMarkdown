@@ -104,13 +104,13 @@ v.2021.09 {style=font-size:0.5em;color:coral;background-color:;border-radius:15p
 
 ### Déroulé {style=color:DeepPink}
 
-- **Généralités**, histoire, définitions [→](#/2) {.fade-left .do}
-- *Markdown*, syntaxe et **saveurs** [→](#/3) {.fade-left .do}
-- **Prendre des notes** en *Markdown* [→](#/4) {.fade-left .do}
-- **Rédiger** en *Markdown* [→](#/5) {.fade-left .do}
-- Et ***Zotero*** dans tout ça... [→](#/6) {.fade-left .do}
-- La magie ***Pandoc*** [→](#/7) {.fade-left .do}
-- Extensions (*diaporama*, *diagrammes*, *mindmap*) [→](#/8) {.fade-left .do}
+- **Généralités**, histoire, définitions [→](#/2) {.do}
+- *Markdown*, syntaxe et **saveurs** [→](#/3) {.do}
+- **Prendre des notes** en *Markdown* [→](#/4) {.do}
+- **Rédiger** en *Markdown* [→](#/5) {.do}
+- Et ***Zotero*** dans tout ça... [→](#/6) {.do}
+- La magie ***Pandoc*** [→](#/7) {.do}
+- Extensions (*diaporama*, *diagrammes*, *mindmap*) [→](#/8) {.do}
 
 ---
 
