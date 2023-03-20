@@ -9,7 +9,6 @@ center: true
 pdfSeparateFragments: false
 previewLinks: true
 preloadIframes: true
-
 ---
 
 <style type="text/css">
@@ -29,9 +28,7 @@ code {
 .zerosept {
   font-size:0.7em;
 }
-
 </style>
-
 
 <!-- .slide: data-background="https://64.media.tumblr.com/ae9b5152f55e9d30f64d9e7433840363/tumblr_mwv6cczLEo1six59bo1_500.gif" -->
 
